@@ -235,6 +235,121 @@ import React from 'react';const Index = () => {
               </div>
 
 
+
+              <div className="py-12 container mx-auto w-[80%]">
+                <p className="text-gray-600 text-sm pb-2">
+                  Home - Men
+                </p>
+                <p className="text-4xl text-gray-800 font-semibold pb-10">
+                  Watches
+                </p>
+                <div className="pt-8 border-t border-gray-200 flex justify-between">
+                  <p className="text-xl text-gray-600 ">
+                    485 Results
+                  </p>
+                  <div className="relative border border-gray-200 w-[194px] mb-14">
+                    <select type="text" name="language" required="" id="language" className="font-medium appearance-none text-gray-600 pr-14 pt-2 pl-2 pb-3 focus:outline-none">
+                      <option value="Switzerland">Recommended</option>
+                      <option value="America">Premium</option>
+                      <option value="Australia">Golden</option>
+                    </select>
+                  </div>
+                </div>
+
+
+                
+
+                <div className='flex flex-col'>
+                  
+                  <div className='grid grid-cols-3 mx-auto gap-x-14'>
+
+                    <div>
+                    <Image className='' src="/4R_WEmhx8og.png" width={322} height={380} alt=""/>
+                      <p className="pt-4 font-semibold text-gray-800 text-2xl pb-2">
+                        Luxe Collection
+                      </p>
+                      <p className="text-gray-600 pb-6 w-[297px]">
+                        “Now is the winter of our discontent Made glorious summer by this sun of York”
+                      </p>
+                      <p className="text-gray-800 text-xl">
+                        $ 55
+                      </p>
+                    </div>
+
+                    <div>
+                    <Image className='' src="/4R_WEmhx8og (2).png" width={322} height={380} alt=""/> 
+                      <p className="pt-4 font-semibold text-gray-800 text-2xl pb-2">
+                        Luxe Collection
+                      </p>
+                      <p className="text-gray-600 pb-6 w-[297px]">
+                        “Now is the winter of our discontent Made glorious summer by this sun of York”
+                      </p>
+                      <p className="text-gray-800 text-xl">
+                        $ 55
+                      </p>
+                    </div>
+
+
+                    <div>
+                      <Image className='' src="/4R_WEmhx8og (3).png" width={322} height={380} alt=""/> 
+                      <p className="pt-4 font-semibold text-gray-800 text-2xl pb-2"> 
+                        Omega Permium
+                      </p>
+                      <p className="text-gray-600 pb-6 w-[297px]">
+                        “Now is the winter of our discontent Made glorious summer by this sun of York”
+                      </p>
+                      <p className="text-gray-800 text-xl">
+                        $ 55
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className='grid grid-cols-3 mt-9 mx-auto gap-x-14'>
+                    <div>
+                      <Image className='' src="/4R_WEmhx8og (3).png" width={322} height={380} alt=""/> 
+                      <p className="pt-4 font-semibold text-gray-800 text-2xl pb-2">
+                        Rolex Premium
+                      </p>
+                      <p className="text-gray-600 pb-6 w-[297px]">
+                        “Now is the winter of our discontent Made glorious summer by this sun of York”
+                      </p>
+                      <p className="text-gray-800 text-xl">
+                        $ 55
+                      </p>
+                    </div>
+
+                    <div>
+                      <Image className='' src="/4R_WEmhx8og (4).png" width={322} height={380} alt=""/> 
+                      <p className="pt-4 font-semibold text-gray-800 text-2xl pb-2">
+                        Galaxy 3 Premium
+                      </p>
+                      <p className="text-gray-600 pb-6 w-[297px]">
+                        “Now is the winter of our discontent Made glorious summer by this sun of York”
+                      </p>
+                      <p className="text-gray-800 text-xl">
+                        $ 55
+                      </p>
+                    </div>
+
+                    <div>
+                      <Image className='' src="/4R_WEmhx8og (5).png" width={322} height={380} alt=""/> 
+                      <p className="pt-4 font-semibold text-gray-800 text-2xl pb-2">
+                        Apple watch
+                      </p>
+                      <p className="text-gray-600 pb-6 w-[297px]">
+                        “Now is the winter of our discontent Made glorious summer by this sun of York”
+                      </p>
+                      <p className="text-gray-800 text-xl">
+                        $ 55
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        
+       
+
               <div className="mt-12 py-12 container mx-auto w-[80%]">
                 <p className="text-4xl font-semibold text-gray-800 pb-12 ">
                   Our Partners
@@ -259,6 +374,132 @@ import React from 'react';const Index = () => {
                     </p>
                   </div>
                 </div>
+              </div>
+
+
+              <div className="pt-12 pb-10 grid grid-cols-3 gap-x-8 container mx-auto w-[80%]">
+                <Image className="cursor-pointer" src="/image 13.png" width={405} height={380} alt=""/>
+                <Image className="cursor-pointer" src="/image 15.png" width={405} height={380} alt=""/>
+                <Image className="cursor-pointer" src="/image 14.png" width={405} height={380} alt=""/>
+              </div>
+
+
+              <div className=" container mx-auto w-[80%] pb-12 my-10">
+                <p className="text-4xl font-semibold text-gray-800 pb-6 text-center ">
+                  Follow Us On Instagram
+                </p>
+                <p className="text-gray-600 pb-10 text-center">
+                  Follow Us on Instagram @ourinstagramname and tag us to get Featured on our timeline
+                </p>
+                <button className="bg-gray-800 py-5 px-10 flex gap-x-4 items-center my-auto justify-center mx-auto mb-10">
+                  <Image className="cursor-pointer" src="/logo-instagram.png" width={24} height={24} alt=""/>
+                  <p className="text-white font-medium">
+                    Follow Us On Instagram
+                  </p>
+                </button>
+                <div className="pt-12 pb-10 grid grid-cols-3 gap-x-8 container mx-auto">
+                <Image className="cursor-pointer" src="/image 16.png" width={405} height={380} alt=""/>
+                <Image className="cursor-pointer" src="/image 17.png" width={405} height={380} alt=""/>
+                <Image className="cursor-pointer" src="/image 18.png" width={405} height={380} alt=""/>
+              </div>
+            </div>
+
+
+            <div className="py-12 container w-[80%] mx-auto">
+              <div className="py-14 border-t border-b mb-12 border-gray-200 grid grid-cols-4">
+                <div>
+                  <p className="text-xl font-semibold text-gray-600 pb-8">
+                    Customer services
+                  </p>
+                  <div className="grid grid-cols-1 gap-y-6">
+                    <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                      Contact
+                    </a>
+                    <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                      Track Order
+                    </a>
+                    <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                      Delivery &amp; returns
+                    </a>
+                    <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                      Return policy
+                    </a>
+                    <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                      Sitemap
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <p className="text-xl font-semibold text-gray-600 pb-8">
+                    Online services</p>
+                    <div className="grid grid-cols-1 gap-y-6">
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        Payment methods
+                      </a>
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        Shipping options
+                      </a>
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        My account
+                      </a>
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        E-services
+                      </a>
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        Frequently asked questions
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-xl font-semibold text-gray-600 pb-8">
+                      Privacy &amp; legal
+                    </p>
+                    <div className="grid grid-cols-1 gap-y-6">
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        Cookies
+                      </a>
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        Privacy policy
+                      </a>
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        Terms &amp; conditions
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-xl font-semibold text-gray-600 pb-8">
+                      More from luxe
+                    </p>
+                    <div className="grid grid-cols-1 gap-y-6">
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        Luxe app for iOS &amp; Android
+                      </a>
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        The company
+                      </a>
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        Media publications
+                      </a>
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        Careers at luxe
+                      </a>
+                      <a className=" transition duration-300 text-gray-600 cursor-pointer">
+                        luxe &amp; CSR
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div className="container mx-auto justify-center flex flex-col text-center pb-12 mb-52">
+                <div className="pb-3">
+                <Image className="cursor-pointer" src="/luxe.png" width={57} height={30} alt=""/>
+                </div>
+                <p className="text-sm">
+                  © 2021 Luxe Inc. All rights reserved.
+                </p>
               </div>
       </>
     );
