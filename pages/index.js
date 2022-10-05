@@ -5,6 +5,36 @@ import React from 'react';const Index = () => {
 
     return (
       <>
+
+    <div className="container xl:flex hidden mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[80%] ">
+      <div className="flex gap-x-10 items-center my-auto">
+        <Image className="cursor-pointer" src="/icons8-search.svg" width={24} height={24} alt=""/>
+          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+            Men
+          </a>
+          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+            Women
+          </a>
+          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+            Kids
+          </a>
+        </div>
+        <div className="my-auto">
+          <Image className="cursor-pointer" src="/AnitaJane.svg" width={115} height={24} alt=""/>
+        </div>
+        <div className="flex items-center my-auto space-x-6">
+          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+            Join Newsletter
+          </a>
+          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+            Blogs
+          </a>
+          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+            About
+          </a>
+        </div>
+      </div>
+
     <div className='mt-20'>
       <div className="pt-2 container mx-auto flex flex-col xl:flex-row lg:flex-row md:flex-cols sm:flex-cols justify-between w-[80%] space-x-8">
         <div className="w-full xl:w-1/2 lg:w-1/2 md:w-11/12 sm:w-11/12 pb-4">
@@ -255,10 +285,52 @@ import React from 'react';const Index = () => {
                     </select>
                   </div>
                 </div>
-
-
                 
 
+               <div className='flex'>
+
+                <div className="w-3/12 border-t mr-8">
+                  <div className="flex border-b py-3"> 
+                    <div className="">
+                      <h1 className="text-gray-800 font-bold">
+                        Catagory
+                      </h1>
+                      <h1>
+                        Premium
+                      </h1>
+                    </div>
+                    <div className="ml-auto mt-3">
+                    <Image className="cursor-pointer" src="/akar-icons_chevron-left.svg" width={16} height={16} alt=""/>
+                    </div>
+                  </div>
+                  <div className="flex border-b py-3">
+                    <div className="">
+                      <h1 className="text-gray-800 font-bold">
+                        Designer
+                      </h1>
+                      <h1>
+                        Jackson James
+                      </h1>
+                    </div>
+                    <div className="ml-auto mt-3">
+                    <Image className="cursor-pointer" src="/akar-icons_chevron-left.svg" width={16} height={16} alt=""/>
+                    </div>
+                  </div>
+                  <div className="flex border-b py-3">
+                    <div className="">
+                      <h1 className="text-gray-800 font-bold">
+                        Color
+                      </h1>
+                      <h1>
+                        All
+                      </h1>
+                    </div>
+                    <div className="ml-auto mt-3">
+                    <Image className="cursor-pointer" src="/akar-icons_chevron-left.svg" width={16} height={16} alt=""/>
+                    </div>
+                  </div>
+                </div>
+                
                 <div className='flex flex-col'>
                   
                   <div className='grid grid-cols-3 mx-auto gap-x-14'>
@@ -346,6 +418,8 @@ import React from 'react';const Index = () => {
                   </div>
                 </div>
               </div>
+
+              </div> 
             
         
        
@@ -500,6 +574,12 @@ import React from 'react';const Index = () => {
                 <p className="text-sm">
                   © 2021 Luxe Inc. All rights reserved.
                 </p>
+              </div>
+
+
+
+              <div>
+                
               </div>
       </>
     );
