@@ -159,9 +159,9 @@ import React from 'react';const Index = () => {
                         <p class="font-semibold text-2xl text-gray-900">$10,240</p>
                       </div>
                       <button class="bg-gray-900 text-white py-5">
-                        <a href='/checkout'>
+                        <link href='/checkout'>
                           Checkout
-                        </a>
+                        </link>
                       </button>
                     </div>
                   </div>
