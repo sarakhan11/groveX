@@ -41,14 +41,14 @@ const Index = () => {
                 <div class="container mx-auto justify-center w-[80%]">
                     <div class="flex justify-center space-x-8">
                         <div class="carousel relative w-[624PX]">                          
-                          <div class="slideInner___2mfX9 carousel__inner-slide"> 
+                          <div class=""> 
                             <Image className="cursor-pointer" src="/apple-1500849 1.png" width={624} height={536} alt=""/>
                           </div>
                         </div>
-                        <button type="button" aria-label="previous" class="buttonBack___1mlaL carousel__back-button absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 left-7">
+                        <button type="button" aria-label="previous" class=" absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 left-7">
                           <Image className="cursor-pointer" src="/chevron-back (1).png" width={22} height={22} alt=""/>
                         </button>
-                        <button type="button" aria-label="next" class="buttonNext___2mOCa carousel__next-button absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 right-7">
+                        <button type="button" aria-label="next" class=" absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 right-7">
                           <Image className="cursor-pointer" src="/chevron-back.png" width={22} height={22} alt=""/>
                         </button>
                     </div>
