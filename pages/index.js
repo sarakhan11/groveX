@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
+
 import Image from "next/image";
 import React, { useState } from "react";
-import React from 'react';const Index = () => {
-  const [showMenu, setShowMenu] = useState(false);
+const Index = () => {
+
 
     return (
       <>
@@ -47,11 +47,11 @@ import React from 'react';const Index = () => {
             Have a workshop (atelier) in Paris. Deliver Friction-Free Customer Service. 
             Try Kayako free for 14 days.
           </p>
-          <button  href="/discription" className="px-12 py-4 bg-gray-800 hover:bg-gray-700 text-white font-medium">
-            <link href='/discription'>
-              See More
-            </link> 
-          </button>
+          <link>
+            <button  href="/discription" className="px-12 py-4 bg-gray-800 hover:bg-gray-700 text-white font-medium">
+                See More 
+            </button>
+          </link>
         </div>
           <Image className="cursor-pointer" src="/photo-1.png" width={594} height={404} alt=""/>
         </div>
@@ -121,11 +121,11 @@ import React from 'react';const Index = () => {
                 <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-x-4 ">
                   <input placeholder="Full Name" className="placeholder-gray-600 border-2 border-gray-200 p-4"/>
                     <input placeholder="Email Address" className="placeholder-gray-600 border-2 border-gray-200 p-4"/>
-                      <button class="bg-gray-800 hover:bg-gray-700 font-medium text-white py-4 px-14">
-                        <link href="/cart"> 
-                          Join Now
-                        </link>
-                      </button>
+                      <link>
+                        <button href="/cart" class="bg-gray-800 hover:bg-gray-700 font-medium text-white py-4 px-14">   
+                            Join Now
+                        </button>
+                      </link>
                     </div>
                   </div>
                 </div>
@@ -165,11 +165,11 @@ import React from 'react';const Index = () => {
                 <div className="bg-gray-100 w-[380px] py-5 px-4">
                   Bags
                 </div>
-                <div className="bg-gray-100 w-[380px] py-5 px-4">
-                  <link href='/product'>
-                    Watches
-                  </link>
-                </div>
+                <link>
+                  <div href="/product" className="bg-gray-100 w-[380px] py-5 px-4">
+                      Watches
+                  </div>
+                </link>
               </div>
             </div>
 

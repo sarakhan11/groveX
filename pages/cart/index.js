@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+
 import Image from "next/image";
 import React, { useState } from "react";
 import React from 'react';const Index = () => {
@@ -159,11 +159,11 @@ import React from 'react';const Index = () => {
                         <p class="text-gray-900 text-2xl">Total</p>
                         <p class="font-semibold text-2xl text-gray-900">$10,240</p>
                       </div>
-                      <button class="bg-gray-900 text-white py-5">
-                        <link href='/checkout'>
-                          Checkout
-                        </link>
-                      </button>
+                      <link>
+                        <button href='/checkout' class="bg-gray-900 text-white py-5">
+                            Checkout
+                        </button>
+                      </link>
                     </div>
                   </div>
                 </div>
