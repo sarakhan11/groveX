@@ -1,7 +1,6 @@
-
+import { useEffect, useState } from 'react'
 import Image from "next/image";
-import React, { useState } from "react";
-const Index = () => {
+import React from 'react';const Index = () => {
   const [showMenu, setShowMenu] = useState(false);
 
     return (
@@ -199,7 +198,7 @@ const Index = () => {
                     </div>
                 </div>
                 <div class="flex space-x-8 w-full pb-8">
-                <Image className="cursor-pointer" src="/rectangle 195.png" width={186} height={150} alt=""/>
+                <Image className="cursor-pointer" src="/rectangle 194.png" width={186} height={150} alt=""/>
                     <div class="w-full">
                         <div class="flex justify-between mx-auto">
                             <p class="text-gray-800 font-medium text-lg pb-4">
@@ -366,7 +365,7 @@ const Index = () => {
 
               <div className="container mx-auto justify-center flex flex-col text-center pb-12 mb-52">
                 <div className="pb-3">
-                    <Image className="cursor-pointer" src="/luxe.png" width={57} height={30} alt=""/>
+                <Image className="cursor-pointer" src="/luxe.png" width={57} height={30} alt=""/>
                 </div>
                 <p className="text-sm">
                   © 2021 Luxe Inc. All rights reserved.

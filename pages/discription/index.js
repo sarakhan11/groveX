@@ -1,7 +1,8 @@
-
+import { useEffect, useState } from 'react'
 import Image from "next/image";
-import React, { useState } from "react";
-const Index = () => {
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import React from 'react';const Index = () => {
   const [showMenu, setShowMenu] = useState(false);
 
     return (
@@ -40,15 +41,31 @@ const Index = () => {
             <main>
                 <div class="container mx-auto justify-center w-[80%]">
                     <div class="flex justify-center space-x-8">
-                        <div class="carousel relative w-[624PX]">                          
-                          <div class=""> 
-                            <Image className="cursor-pointer" src="/apple-1500849 1.png" width={624} height={536} alt=""/>
-                          </div>
+                        <div class="carousel relative w-[624PX]">
+                            <div class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal" aria-live="polite" aria-label="slider" tabindex="0" role="listbox">
+                                <div class="carousel__slider-tray-wrapper carousel__slider-tray-wrap--horizontal">
+                                    <div class="sliderTray___-vHFQ sliderAnimation___300FY carousel__slider-tray carousel__slider-tray--horizontal" style="width: 300%; transform: translateX(0%) translateX(0px); flex-direction: row;">
+                                        <div tabindex="0" aria-selected="true" aria-label="slide" role="option" class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible" style="width: 33.3333%; padding-bottom: 33.3333%;"><div class="slideInner___2mfX9 carousel__inner-slide"> 
+                                          <Image className="cursor-pointer" src="/apple-1500849 1.png" width={624} height={536} alt=""/>
+                                        </div>
+                                    </div>
+                                    <div tabindex="-1" aria-selected="false" aria-label="slide" role="option" class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden" style="width: 33.3333%; padding-bottom: 33.3333%;">
+                                        <div class="slideInner___2mfX9 carousel__inner-slide">
+                                          <Image className="cursor-pointer" src="/apple-1500849 1.png" width={624} height={536} alt=""/>
+                                        </div>
+                                    </div>
+                                    <div tabindex="-1" aria-selected="false" aria-label="slide" role="option" class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden" style="width: 33.3333%; padding-bottom: 33.3333%;">
+                                        <div class="slideInner___2mfX9 carousel__inner-slide">
+                                          <Image className="cursor-pointer" src="/apple-1500849 1.png" width={624} height={536} alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <button type="button" aria-label="previous" class=" absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 left-7">
+                        <button type="button" aria-label="previous" class="buttonBack___1mlaL carousel__back-button absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 left-7">
                           <Image className="cursor-pointer" src="/chevron-back (1).png" width={22} height={22} alt=""/>
                         </button>
-                        <button type="button" aria-label="next" class=" absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 right-7">
+                        <button type="button" aria-label="next" class="buttonNext___2mOCa carousel__next-button absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 right-7">
                           <Image className="cursor-pointer" src="/chevron-back.png" width={22} height={22} alt=""/>
                         </button>
                     </div>
@@ -152,7 +169,7 @@ const Index = () => {
                                 </p>
                             </div>
                         </div>
-                    
+                    </div>
                 </div>
                 <div class="flex space-x-8 items-end justify-between pb-[88px] ">
                     <div class="grid grid-cols-3 gap-x-8">
@@ -317,7 +334,7 @@ const Index = () => {
 
               <div className="container mx-auto justify-center flex flex-col text-center pb-12 mb-52">
                 <div className="pb-3">
-                  <Image className="cursor-pointer" src="/luxe.png" width={57} height={30} alt=""/>
+                <Image className="cursor-pointer" src="/luxe.png" width={57} height={30} alt=""/>
                 </div>
                 <p className="text-sm">
                   © 2021 Luxe Inc. All rights reserved.

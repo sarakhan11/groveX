@@ -1,7 +1,6 @@
-
+import { useEffect, useState } from 'react'
 import Image from "next/image";
-import React, { useState } from "react";
-const Index = () => {
+import React from 'react';const Index = () => {
   const [showMenu, setShowMenu] = useState(false);
 
     return (
@@ -11,9 +10,9 @@ const Index = () => {
                 <p class="text-4xl text-gray-800 font-semibold">
                     The latest and greatest
                 </p>
-                <link href='/filter'>
+                <a href='/filter'>
                     <Image className="cursor-pointer" src="/frame.svg" width={24} height={24} alt="" />
-                </link>
+                </a>
             </div>
             <div class="grid grid-cols-2 gap-x-8 pb-14">
                 <div class="flex flex-col">
