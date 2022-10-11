@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import React from 'react';const Index = () => {
+const Index = () => {
   const [showMenu, setShowMenu] = useState(false);
   
 
