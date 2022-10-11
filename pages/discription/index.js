@@ -40,17 +40,10 @@ const Index = () => {
             <main>
                 <div class="container mx-auto justify-center w-[80%]">
                     <div class="flex justify-center space-x-8">
-                        <div class="carousel relative w-[624PX]">
-                            <div class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal" aria-live="polite" aria-label="slider" tabindex="0" role="listbox">
-                                <div class="carousel__slider-tray-wrapper carousel__slider-tray-wrap--horizontal">
-                                    <div class="sliderTray___-vHFQ sliderAnimation___300FY carousel__slider-tray carousel__slider-tray--horizontal" >
-                                        <div tabindex="0" aria-selected="true" aria-label="slide" role="option" class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible" >
-                                          <div class="slideInner___2mfX9 carousel__inner-slide"> 
-                                            <Image className="cursor-pointer" src="/apple-1500849 1.png" width={624} height={536} alt=""/>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel relative w-[624PX]">                          
+                          <div class="slideInner___2mfX9 carousel__inner-slide"> 
+                            <Image className="cursor-pointer" src="/apple-1500849 1.png" width={624} height={536} alt=""/>
+                          </div>
                         </div>
                         <button type="button" aria-label="previous" class="buttonBack___1mlaL carousel__back-button absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 left-7">
                           <Image className="cursor-pointer" src="/chevron-back (1).png" width={22} height={22} alt=""/>
@@ -159,7 +152,7 @@ const Index = () => {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
                 <div class="flex space-x-8 items-end justify-between pb-[88px] ">
                     <div class="grid grid-cols-3 gap-x-8">
