@@ -47,9 +47,9 @@ import React from 'react';const Index = () => {
             Try Kayako free for 14 days.
           </p>
           <button  href="/discription" className="px-12 py-4 bg-gray-800 hover:bg-gray-700 text-white font-medium">
-            <link href='/discription'>
+            <a href='/discription'>
               See More
-            </link> 
+            </a> 
           </button>
         </div>
           <Image className="cursor-pointer" src="/photo-1.png" width={594} height={404} alt=""/>
@@ -121,9 +121,9 @@ import React from 'react';const Index = () => {
                   <input placeholder="Full Name" className="placeholder-gray-600 border-2 border-gray-200 p-4"/>
                     <input placeholder="Email Address" className="placeholder-gray-600 border-2 border-gray-200 p-4"/>
                       <button class="bg-gray-800 hover:bg-gray-700 font-medium text-white py-4 px-14">
-                        <link href="/cart"> 
+                        <a href="/cart"> 
                           Join Now
-                        </link>
+                        </a>
                       </button>
                     </div>
                   </div>
@@ -165,9 +165,9 @@ import React from 'react';const Index = () => {
                   Bags
                 </div>
                 <div className="bg-gray-100 w-[380px] py-5 px-4">
-                  <link href='/product'>
+                  <a href='/product'>
                     Watches
-                  </link>
+                  </a>
                 </div>
               </div>
             </div>
