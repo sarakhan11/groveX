@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Image from "next/image";
+import Link from "next/link";
 import React from 'react';const Index = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -46,11 +47,11 @@ import React from 'react';const Index = () => {
             Have a workshop (atelier) in Paris. Deliver Friction-Free Customer Service. 
             Try Kayako free for 14 days.
           </p>
-          <button  href="/discription" className="px-12 py-4 bg-gray-800 hover:bg-gray-700 text-white font-medium">
-            <a href='/discription'>
-              See More
-            </a> 
-          </button>
+          <link href='/discription'>
+            <button className="px-12 py-4 bg-gray-800 hover:bg-gray-700 text-white font-medium">
+                See More
+            </button>
+          </link>
         </div>
           <Image className="cursor-pointer" src="/photo-1.png" width={594} height={404} alt=""/>
         </div>
@@ -120,11 +121,11 @@ import React from 'react';const Index = () => {
                 <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-x-4 ">
                   <input placeholder="Full Name" className="placeholder-gray-600 border-2 border-gray-200 p-4"/>
                     <input placeholder="Email Address" className="placeholder-gray-600 border-2 border-gray-200 p-4"/>
-                      <button class="bg-gray-800 hover:bg-gray-700 font-medium text-white py-4 px-14">
-                        <a href="/cart"> 
-                          Join Now
-                        </a>
-                      </button>
+                      <link href="/cart">
+                        <button class="bg-gray-800 hover:bg-gray-700 font-medium text-white py-4 px-14">
+                            Join Now
+                        </button>
+                      </link>
                     </div>
                   </div>
                 </div>
@@ -144,7 +145,7 @@ import React from 'react';const Index = () => {
 
 
 
-            <div className="py-12 container mx-auto text-center ">
+            <div className="py-12 container mx-auto text-center">
               <p className="text-4xl font-semibold text-gray-800 pb-12">
                 Shop By Category
               </p>
@@ -165,9 +166,9 @@ import React from 'react';const Index = () => {
                   Bags
                 </div>
                 <div className="bg-gray-100 w-[380px] py-5 px-4">
-                  <a href='/product'>
+                  <link href='/product'>
                     Watches
-                  </a>
+                  </link>
                 </div>
               </div>
             </div>
