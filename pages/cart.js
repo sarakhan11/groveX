@@ -51,10 +51,10 @@ import React from 'react';const cart = () => {
                     <p className="text-4xl font-semibold text-gray-900 pb-12">
                       Bag
                     </p>
-                    <div className="flex space-x-8">
-                      <div className="py-8 border-t border-gray-100 w-[848px] border-b">
-                        <div className="flex justify-between items-start mx-auto">
-                          <div className="flex space-x-6 pb-16">
+                    <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col space-x-8 mx-auto">
+                      <div className="py-8 border-t border-gray-100 xl:w-[848px] sm:w-[448px] lg:w-[848px]md:w-[848px] w-[348px] border-b">
+                        <div className="flex xl:justify-between lg:justify-between md:justify-between sm:justify-center items-start mx-auto">
+                          <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-row space-x-6 pb-16">
                           <Image className="cursor-pointer" src="/unsplash_ZB4eQcNqVUs.png" width={164} height={166} alt=""/>
                             <div>
                               <p className="text-xs text-gray-900">RF293</p>
@@ -86,8 +86,8 @@ import React from 'react';const cart = () => {
                             <p className="font-semibold text-gray-900 mb-auto mt-24">$9,000</p>
                           </div>
                         </div>
-                        <div className="flex justify-between items-start mx-auto py-8 border-t border-gray-100">
-                          <div className="flex space-x-6 ">
+                        <div className="flex  xl:justify-between lg:justify-between md:justify-between sm:justify-center items-start mx-auto py-8 border-t border-gray-100">
+                          <div className="flex  flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-row space-x-6 ">
                           <Image className="cursor-pointer" src="/unsplash_ZB4eQcNqVUs.png" width={164} height={166} alt=""/>
                           <div>
                             <p className="text-xs text-gray-900">RF293</p>
@@ -115,8 +115,8 @@ import React from 'react';const cart = () => {
                           <p className="font-semibold text-gray-900 mb-auto mt-24">$9,000</p>
                         </div>
                       </div>
-                      <div className="flex justify-between items-start mx-auto py-8 border-gray-100 border-t">
-                        <div className="flex space-x-6 ">
+                      <div className="flex xl:justify-between lg:justify-between md:justify-between sm:justify-center items-start mx-auto py-8 border-gray-100 border-t">
+                        <div className="flex  flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-row  space-x-6 ">
                         <Image className="cursor-pointer" src="/unsplash_ZB4eQcNqVUs.png" width={164} height={166} alt=""/>
                           <div>
                           <p className="text-xs text-gray-900">RF293</p>
@@ -145,13 +145,18 @@ import React from 'react';const cart = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-gray-50 w-[400px] p-8 flex flex-col justify-between">
+
+                  
+                  <div className="bg-gray-50 w-[300px] xl:w-[400px] lg:w-[400px] md:w-[400px] sm:w-[400px] p-8 flex flex-col justify-between">
                     <div>
                       <p className="text-gray-900 text-4xl font-semibold pb-16">Summary</p>
                       <div className="grid grid-cols-2 gap-y-5 items-end w-[246px]">
-                        <p className="text-gray-900">Subtotal</p><p class="text-gray-900 text-right"> $9,000</p>
-                        <p className="text-gray-900">Shipping</p><p class="text-gray-900 text-right"> $30</p>
-                        <p className="text-gray-900">Tax</p><p class="text-gray-900 text-right"> $39</p>
+                        <p className="text-gray-900">Subtotal</p>
+                        <p class="text-gray-900 text-right"> $9,000</p>
+                        <p className="text-gray-900">Shipping</p>
+                        <p class="text-gray-900 text-right"> $30</p>
+                        <p className="text-gray-900">Tax</p>
+                        <p class="text-gray-900 text-right"> $39</p>
                       </div>
                     </div>
                     <div className="flex flex-col">
@@ -176,7 +181,7 @@ import React from 'react';const cart = () => {
           
 
           <div className="py-12 container w-[80%] mx-auto">
-              <div className="py-14 border-t border-b mb-12 border-gray-200 grid grid-cols-4">
+              <div className="py-14 border-t border-b mb-12 border-gray-200 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-y-4 sm:grid-cols-1 ">
                 <div>
                   <p className="text-xl font-semibold text-gray-600 pb-8">
                     Customer services

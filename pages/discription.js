@@ -43,8 +43,8 @@ import React from 'react';const discription = () => {
         
         <div>
             <main>
-                <div className="container mx-auto justify-center w-[80%]">
-                    <div className="flex justify-center space-x-8">
+                <div className="container mx-auto justify-center w-[70%]">
+                    <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col justify-center space-x-8">
                     <div className="container mx-auto pt-32 pb-32" id='contact-section'>
                 <div className=" mt-12">
                     <CarouselProvider
@@ -128,110 +128,114 @@ import React from 'react';const discription = () => {
                         
                   </div>            
                 </div>
-                    <div className="w-[624px]">
-                        <p className="text-2xl font-semibold text-gray-800 pb-4">
-                            Apple Watch Series 7
-                        </p>
-                        <div className="pb-6 flex space-x-2">
-                            <p className=" text-gray-600">
-                                by 
+
+
+                        <div class="lg:w-[624px] w-full">
+                            <p class="lg:text-2xl md:text-xl text-lg font-semibold text-gray-800 lg:pb-4 pb-2">
+                                Apple Watch Series 7
                             </p>
-                            <p className="font-medium font-gray-800">
-                                Apple
-                            </p>
-                        </div>
-                        <div className="flex space-x-8 pb-6">
-                            <p className="text-2xl text-gray-800 font-semibold pr-8 border-r border-gray-900">
-                                $400
-                            </p>
-                            <div class="grid gap-x-4 grid-cols-5">
-                              <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
-                              <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
-                              <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
-                              <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
-                              <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
+                            <div class="lg:pb-6 pb-4 flex space-x-2">
+                                <p class="text-gray-600 lg:text-base text-sm">
+                                    by 
+                                </p>
+                                <p class="font-medium font-gray-800 lg:text-base text-sm">
+                                    Apple
+                                </p>
                             </div>
-                        </div>
-                        <div className="pb-6 flex space-x-2 pb-8">
-                            <p className=" text-gray-600">
-                                Availability -
-                            </p>
-                            <p className="font-medium font-gray-800">
-                                In stock
-                            </p>
-                        </div>
-                        <div>
-                            <div className="pb-6 grid grid-cols-4 pb-8 gap-y-4 justify-center mx-auto">
-                                <p className="font-medium font-gray-800">
-                                    Dimensions:
+                            <div class="flex space-x-8 lg:pb-6 pb-4">
+                                <p class="lg:text-2xl md:text-xl text-lg text-gray-800 font-semibold pr-8 border-r border-gray-900">
+                                    $400
                                 </p>
-                                <p className=" text-gray-600 col-span-3 ">
-                                    45 x 38 x 10.7 mm (1.77 x 1.50 x 0.42 in)
+                                <div class="grid gap-x-4 grid-cols-5">
+                                    <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
+                                    <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
+                                    <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
+                                    <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
+                                    <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
+                                </div>
+                            </div>
+                            <div class="pb-6 flex space-x-2 lg:pb-8 md:pb-6 pb-4">
+                                <p class=" text-gray-600 lg:text-base text-sm">
+                                    Availability -
                                 </p>
-                                <p className="font-medium font-gray-800">
-                                    Weight:
+                                <p class="font-medium font-gray-800 lg:text-base text-sm">
+                                    In stock
                                 </p>
-                                <p className=" text-gray-600 col-span-3 ">
-                                    32 g (41mm), 38.8 g (45mm) (1.13 oz)
-                                </p>
-                                <p className="font-medium font-gray-800">
-                                    Body:
-                                </p>
-                                <p className=" text-gray-600 col-span-3 ">
-                                    Glass front, ceramic/sapphire crystal back, aluminum frame
-                                </p>
-                                <p className="font-medium font-gray-800">
-                                    Display:
-                                </p>
-                                <p className=" text-gray-600 col-span-3 ">
-                                    Retina LTPO OL
-                                </p>
-                                <p className="font-medium font-gray-800">
-                                    CPU:
-                                </p>
-                                <p className=" text-gray-600 col-span-3 ">
-                                    Dual-core
-                                </p>
-                                <p className="font-medium font-gray-800">
-                                    GPU:
-                                </p>
-                                <p className=" text-gray-600 col-span-3 ">
-                                    PowerVR
-                                </p>
-                                <p className="font-medium font-gray-800">
-                                    Sensors:
-                                </p>
-                                <div className=" text-gray-600 flex flex-col col-span-3 ">
-                                    <p>
-                                        Accelerometer, gyro, heart rate, barometer, compass
+                            </div>
+                            <div>
+                                <div class="pb-6 grid lg:grid-cols-4 grid-cols-3 pb-8 lg:gap-y-4 gap-y-2 justify-center mx-auto">
+                                    <p class="font-medium font-gray-800">
+                                        Dimensions:
                                     </p>
-                                    <p>
-                                        Natural language commands &amp; dictation 
+                                    <p class=" text-gray-600 col-span-3 ">
+                                        45 x 38 x 10.7 mm (1.77 x 1.50 x 0.42 in)
                                     </p>
-                                    <p> 
-                                        Ultra Wideband (UWB) support
+                                    <p class="font-medium font-gray-800">
+                                        Weight:
+                                    </p>
+                                    <p class=" text-gray-600 col-span-3 ">
+                                        32 g (41mm), 38.8 g (45mm) (1.13 oz)
+                                    </p>
+                                    <p class="font-medium font-gray-800">
+                                        Body:
+                                    </p>
+                                    <p class=" text-gray-600 col-span-3 ">
+                                        Glass front, ceramic/sapphire crystal back, aluminum frame
+                                    </p>
+                                    <p class="font-medium font-gray-800">
+                                        Display:
+                                    </p>
+                                    <p class=" text-gray-600 col-span-3 ">
+                                        Retina LTPO OL
+                                    </p>
+                                    <p class="font-medium font-gray-800">
+                                        CPU:
+                                    </p>
+                                    <p class=" text-gray-600 col-span-3 ">
+                                        Dual-core
+                                    </p>
+                                    <p class="font-medium font-gray-800">
+                                        GPU:
+                                    </p>
+                                    <p class=" text-gray-600 col-span-3 ">
+                                        PowerVR
+                                    </p>
+                                    <p class="font-medium font-gray-800">
+                                        Sensors:
+                                    </p>
+                                    <div class=" text-gray-600 flex flex-col col-span-3 ">
+                                        <p>
+                                            Accelerometer, gyro, heart rate, barometer, compass
+                                        </p>
+                                        <p> 
+                                            Natural language commands &amp; dictation 
+                                        </p>
+                                        <p>
+                                            Ultra Wideband (UWB) support
+                                        </p>
+                                    </div>
+                                </div>
+                    
+                            <div class="lg:pb-8 pb-4">
+                                <div class="flex space-x-5 items-center my-auto lg:pb-4 pb-2">
+                                <Image className="cursor-pointer" src="/checkmark.svg" width={20} height={20} alt=""/>
+                                    <p class="font-medium text-gray-800">
+                                        Free Shipping
+                                    </p>
+                                </div>
+                                <div class="flex space-x-5 items-center my-auto">
+                                <Image className="cursor-pointer" src="/checkmark.svg" width={20} height={20} alt=""/>
+                                    <p class="font-medium text-gray-800">
+                                        EMI Options Available
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div className="pb-8">
-                            <div className="flex space-x-5 items-center my-auto pb-4">
-                            <Image className="cursor-pointer" src="/cheeckmark.svg" width={20} height={20} alt=""/>
-                                <p class="font-medium text-gray-800">
-                                    Free Shipping
-                                </p>
-                            </div>
-                            <div className="flex space-x-5 items-center my-auto">
-                            <Image className="cursor-pointer" src="/checkmark.svg" width={20} height={20} alt=""/>
-                                <p className="font-medium text-gray-800">
-                                    EMI Options Available
-                                </p>
-                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="flex space-x-8 items-end justify-between pb-[88px] ">
-                    <div className="grid grid-cols-3 gap-x-8">
+                        </div>
+
+                <div className="flex flex-col xl:flex:row lg:flex-row md:flex-col sm:flex-col space-x-8 items-start xl:items-end lg:items-end md:items-start sm:items-start  justify-between pb-[88px] ">
+                    <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-x-8">
                         <div className="flex flex-col justify-center mx-auto w-[187px] space-y-6">
                         <Image className="cursor-pointer" src="/vector (7).svg" width={22} height={22} alt=""/>
                             <p className="text-gray-600 font-sm text-center">
@@ -252,7 +256,7 @@ import React from 'react';const discription = () => {
                         </div>
                     </div>
                     <div classNam="">
-                    <div classNam="flex space-x-8 items-center border-t border-gray-400 border-b py-6 w-[624px]">
+                    <div classNam="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col space-x-8 items-center border-t border-gray-400 border-b py-6 w-[624px]">
                         <p className="font-medium text-gray-800">
                             Band colors
                         </p>
@@ -263,7 +267,7 @@ import React from 'react';const discription = () => {
                           <Image className="cursor-pointer" src="/ellipse 94.svg" width={20} height={20} alt=""/>
                         </div>
                     </div>
-                    <div className="flex space-x-6 items-center mt-8 ">
+                    <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-y-8 space-x-6 items-center mt-8 ">
                         <button className="text-white bg-gray-800 py-[18px] hover:bg-gray-700 transition duration-300 font-medium relative px-9 flex space-x-2 items-center my-auto gap-x-2 ">
                         <Image className="cursor-pointer" src="/cart.svg" width={20} height={20} alt=""/>
                             <p>
@@ -282,9 +286,9 @@ import React from 'react';const discription = () => {
                     </div>
                 </div>
             </div>
-            <div className="my-20 flex items-center my-auto bg-gray-50">
+            <div className="my-20 flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col items-center my-auto bg-gray-50">
               <Image className="cursor-pointer" src="/nathan-oakley--o3qNM4D994-unsplash 1 (1).png" width={845} height={644} alt=""/>
-                <div className="py-14 px-10 flex flex-col -ml-20 z-40 h-[364px] bg-white w-[380px]">
+                <div className="py-14 px-20 flex flex-col -ml-20 z-40 h-[364px] bg-white w-[380px]">
                     <p className="text-4xl font-semibold text-gray-800 pb-4">
                         Join us!
                     </p>
@@ -304,7 +308,7 @@ import React from 'react';const discription = () => {
 
 
       <div className="py-12 container w-[80%] mx-auto">
-              <div className="py-14 border-t border-b mb-12 border-gray-200 grid grid-cols-4">
+              <div className="py-14 border-t border-b mb-12 border-gray-200 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-y-4 sm:grid-cols-1 ">
                 <div>
                   <p className="text-xl font-semibold text-gray-600 pb-8">
                     Customer services

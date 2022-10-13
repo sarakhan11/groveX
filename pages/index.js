@@ -174,18 +174,18 @@ import React from 'react';const Index = () => {
             </div>
 
 
-            <div className='py-20 mx-auto container justify-center'>
+            <div className='py-20 mx-auto container justify-center ml-10'>
               <h1 className='text-4xl font-semibold text-gray-800 text-center'>
                 Comfiest Sofa Seats
               </h1>
-              <p className='text-base font-normal text-center w-[624px] mx-auto mt-4'>
+              <p className='text-base font-normal text-center lg:w-[624px] xl:w-[624px] md:w-[624px] sm:w-[424px] w-[324px] mx-auto mt-4'>
               It is a long established fact that a reader will be distracted 
               by the readable content of a page when looking at its layout. 
               </p>
               <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 mt-24 gap-x-8'>
 
                   <div className=''>
-                    <div>
+                    <div className=''>
                       <div className='flex'>
                         <Image className="cursor-pointer" src="/frame 811347.png" width={22} height={22} alt=""/>
                         <h1 className='ml-4'>
@@ -294,7 +294,7 @@ import React from 'react';const Index = () => {
                 </div>
                 
 
-               <div className='flex'>
+               <div className='flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col'>
 
                 <div className="w-3/12 border-t mr-8">
                   <div className="flex border-b py-3"> 
@@ -340,7 +340,7 @@ import React from 'react';const Index = () => {
                 
                 <div className='flex flex-col'>
                   
-                  <div className='grid grid-cols-3 mx-auto gap-x-14'>
+                  <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mx-auto gap-x-14'>
 
                     <div>
                     <Image className='' src="/4R_WEmhx8og.png" width={322} height={380} alt=""/>
@@ -383,7 +383,7 @@ import React from 'react';const Index = () => {
                     </div>
                   </div>
 
-                  <div className='grid grid-cols-3 mt-9 mx-auto gap-x-14'>
+                  <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-9 mx-auto gap-x-14'>
                     <div>
                       <Image className='' src="/4R_WEmhx8og (3).png" width={322} height={380} alt=""/> 
                       <p className="pt-4 font-semibold text-gray-800 text-2xl pb-2">
@@ -435,7 +435,7 @@ import React from 'react';const Index = () => {
                 <p className="text-4xl font-semibold text-gray-800 pb-12 ">
                   Our Partners
                 </p>
-                <div className="grid grid-cols-3 gap-x-8">
+                <div className="grid grid-cols-1 xl:grid-cols-3 gap-y-8 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-x-8">
                   <div className="flex space-x-6 items-start"> 
                   <Image className="cursor-pointer" src="/frame 2089.png" width={86} height={24} alt=""/>
                     <p className="text-gray-600 w-[295px]">
@@ -458,7 +458,7 @@ import React from 'react';const Index = () => {
               </div>
 
 
-              <div className="pt-12 pb-10 grid grid-cols-3 gap-x-8 container mx-auto w-[80%]">
+              <div className="pt-12 pb-10 grid gap-y-6 grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-x-8 container mx-auto w-[80%]">
                 <Image className="cursor-pointer" src="/image 13.png" width={405} height={380} alt=""/>
                 <Image className="cursor-pointer" src="/image 15.png" width={405} height={380} alt=""/>
                 <Image className="cursor-pointer" src="/image 14.png" width={405} height={380} alt=""/>
@@ -478,7 +478,7 @@ import React from 'react';const Index = () => {
                     Follow Us On Instagram
                   </p>
                 </button>
-                <div className="pt-12 pb-10 grid grid-cols-3 gap-x-8 container mx-auto">
+                <div className="pt-12 pb-10 grid gap-y-8 grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-x-8 container mx-auto">
                 <Image className="cursor-pointer" src="/image 16.png" width={405} height={380} alt=""/>
                 <Image className="cursor-pointer" src="/image 17.png" width={405} height={380} alt=""/>
                 <Image className="cursor-pointer" src="/image 18.png" width={405} height={380} alt=""/>
@@ -487,7 +487,7 @@ import React from 'react';const Index = () => {
 
 
             <div className="py-12 container w-[80%] mx-auto">
-              <div className="py-14 border-t border-b mb-12 border-gray-200 grid grid-cols-4">
+              <div className="py-14 border-t border-b mb-12 border-gray-200 grid  grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-y-4 sm:grid-cols-1 ">
                 <div>
                   <p className="text-xl font-semibold text-gray-600 pb-8">
                     Customer services
