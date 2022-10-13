@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
+
 import Image from "next/image";
 import Link from "next/link";
-import React from 'react';const Index = () => {
+import React from 'react';const checkout = () => {
   const [showMenu, setShowMenu] = useState(false);
 
     return (
@@ -38,21 +38,21 @@ import React from 'react';const Index = () => {
 
 
 
-        <div class="container w-[842px] mx-auto justify-center">
-            <p class="text-4xl font-semibold text-gray-800 pb-12">
+        <div className="container w-[842px] mx-auto justify-center">
+            <p className="text-4xl font-semibold text-gray-800 pb-12">
                 Check out
             </p>
-            <p class="text-xl font-semibold text-gray-800 w-[50%] pb-6">
+            <p className="text-xl font-semibold text-gray-800 w-[50%] pb-6">
                 Contact Information
             </p>
-            <p class="text-gray-600 pb-4 border-b border-gray-200 mb-6">
+            <p className="text-gray-600 pb-4 border-b border-gray-200 mb-6">
                 Email
             </p>
-            <div class="flex pb-7">
-                <div class="bg-white dark:bg-gray-800 border rounded-sm border-gray-400 dark:border-gray-700 mr-2 w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
-                    <input type="checkbox" class="checkbox opacity-0 absolute cursor-pointer w-full h-full"/>
-                    <div class="check-icon hidden bg-gray-800 text-white rounded-sm">
-                    <svg class="icon icon-tabler icon-tabler-check"
+            <div className="flex pb-7">
+                <div className="bg-white dark:bg-gray-800 border rounded-sm border-gray-400 dark:border-gray-700 mr-2 w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
+                    <input type="checkbox" className="checkbox opacity-0 absolute cursor-pointer w-full h-full"/>
+                    <div className="check-icon hidden bg-gray-800 text-white rounded-sm">
+                    <svg className="icon icon-tabler icon-tabler-check"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20" 
                         height="20" 
@@ -67,43 +67,43 @@ import React from 'react';const Index = () => {
                     </svg>
                 </div>
             </div>
-            <p class="text-sm text-gray-600">
+            <p className="text-sm text-gray-600">
                 Email me with news and offers.
             </p>
         </div>
         <div>
-            <p class="text-xl font-semibold text-gray-800 pb-6">
+            <p className="text-xl font-semibold text-gray-800 pb-6">
                 Shipping Details
             </p>
-            <div class="grid grid-cols-2 gap-y-6 gap-x-8">
-                <input placeholder="First Name" class="border-b border-gray-200 pb-4 placeholder-gray-600"/>
-                <input placeholder="Last Name" class="border-b border-gray-200 pb-4 placeholder-gray-600"/>
-                <input placeholder="Address" class="border-b border-gray-200 pb-4 placeholder-gray-600 col-span-2"/>
-                <input placeholder="Address (Line 02)" class="border-b border-gray-200 pb-4 placeholder-gray-600 col-span-2"/>
-                <div class="relative">
-                    <select aria-label="select a city" type="text" name="city" required="" id="City" class="bg-white appearance-none -z-10 text-gray-600 w-full border-b border-gray-200 pb-4 text-black-primary invalid:text-gray-600 rounded focus:outline-none">
+            <div className="grid grid-cols-2 gap-y-6 gap-x-8">
+                <input placeholder="First Name" className="border-b border-gray-200 pb-4 placeholder-gray-600"/>
+                <input placeholder="Last Name" className="border-b border-gray-200 pb-4 placeholder-gray-600"/>
+                <input placeholder="Address" className="border-b border-gray-200 pb-4 placeholder-gray-600 col-span-2"/>
+                <input placeholder="Address (Line 02)" className="border-b border-gray-200 pb-4 placeholder-gray-600 col-span-2"/>
+                <div className="relative">
+                    <select aria-label="select a city" type="text" name="city" required="" id="City" className="bg-white appearance-none -z-10 text-gray-600 w-full border-b border-gray-200 pb-4 text-black-primary invalid:text-gray-600 rounded focus:outline-none">
                         <option value="" disabled="">Town / City</option>
                         <option value="Switzerland">Faisalabad</option>
                         <option value="America">Lahore</option>
                         <option value="Australia">Islamabad</option>
                     </select>
-                    <div class="z-30 cursor-pointer absolute top-0 right-4 ">
+                    <div className="z-30 cursor-pointer absolute top-0 right-4 ">
                         <Image className="cursor-pointer" src="/vector (8).svg" width={14} height={14} alt=""/>
                     </div>
                 </div>
-                <div class="relative">
-                    <select aria-label="select a city" type="text" name="region" required="" id="region" class="bg-white appearance-none -z-10 text-gray-600 w-full border-b border-gray-200 pb-4 text-black-primary invalid:text-gray-600 rounded focus:outline-none">
+                <div className="relative">
+                    <select aria-label="select a city" type="text" name="region" required="" id="region" className="bg-white appearance-none -z-10 text-gray-600 w-full border-b border-gray-200 pb-4 text-black-primary invalid:text-gray-600 rounded focus:outline-none">
                         <option value="" disabled="">Region (Optional)</option>
                         <option value="Switzerland">California</option>
                         <option value="America">Africa</option>
                         <option value="Australia">India</option>
                     </select>
-                    <div class="z-30 cursor-pointer absolute top-0 right-4 ">
+                    <div className="z-30 cursor-pointer absolute top-0 right-4 ">
                         <Image className="cursor-pointer" src="/vector (8).svg" width={14} height={14} alt=""/>
                     </div>
                 </div>
-                <div class="relative">
-                    <select aria-label="select a city" type="text" name="region" required="" id="region" class="bg-white appearance-none -z-10 text-gray-600 w-full border-b border-gray-200 pb-4 text-black-primary invalid:text-gray-600 rounded focus:outline-none">
+                <div className="relative">
+                    <select aria-label="select a city" type="text" name="region" required="" id="region" className="bg-white appearance-none -z-10 text-gray-600 w-full border-b border-gray-200 pb-4 text-black-primary invalid:text-gray-600 rounded focus:outline-none">
                         <option value="" disabled="">Country / Region</option>
                         <option value="Switzerland">California</option>
                         <option value="America">Africa</option>
@@ -113,25 +113,25 @@ import React from 'react';const Index = () => {
                         <Image className="cursor-pointer" src="/vector (8).svg" width={14} height={14} alt=""/>
                     </div>
                 </div>
-                <div class="relative">
-                    <select aria-label="select a city" type="text" name="region" required="" id="region" class="bg-white appearance-none -z-10 text-gray-600 w-full border-b border-gray-200 pb-4 text-black-primary invalid:text-gray-600 rounded focus:outline-none">
+                <div className="relative">
+                    <select aria-label="select a city" type="text" name="region" required="" id="region" className="bg-white appearance-none -z-10 text-gray-600 w-full border-b border-gray-200 pb-4 text-black-primary invalid:text-gray-600 rounded focus:outline-none">
                         <option value="" disabled="">Zip Code</option>
                         <option value="90321">90321</option>
                         <option value="29000">29000</option>
                         <option value="72500">72500</option>
                     </select>
-                    <div class="z-30 cursor-pointer absolute top-0 right-4 ">
+                    <div className="z-30 cursor-pointer absolute top-0 right-4 ">
                         <Image className="cursor-pointer" src="/vector (8).svg" width={14} height={14} alt=""/>
                     </div>
                 </div>
                 <input placeholder="Phone Number" class="border-b border-gray-200 pb-4 placeholder-gray-600"/>
             </div>
         </div>
-        <div class="flex pt-6 pb-12">
-            <div class="bg-white dark:bg-gray-800 border rounded-sm border-gray-400 dark:border-gray-700 mr-2 w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
-                <input type="checkbox" class="checkbox opacity-0 absolute cursor-pointer w-full h-full"/>
-                    <div class="check-icon hidden bg-gray-800 text-white rounded-sm">
-                        <svg class="icon icon-tabler icon-tabler-check" 
+        <div className="flex pt-6 pb-12">
+            <div className="bg-white dark:bg-gray-800 border rounded-sm border-gray-400 dark:border-gray-700 mr-2 w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
+                <input type="checkbox" className="checkbox opacity-0 absolute cursor-pointer w-full h-full"/>
+                    <div className="check-icon hidden bg-gray-800 text-white rounded-sm">
+                        <svg className="icon icon-tabler icon-tabler-check" 
                             xmlns="http://www.w3.org/2000/svg" 
                             width="20" 
                             height="20" 
@@ -146,129 +146,129 @@ import React from 'react';const Index = () => {
                         </svg>
                     </div>
                 </div>
-                <p class="text-sm text-gray-600">
+                <p className="text-sm text-gray-600">
                     Save this information for next time.
                 </p>
             </div>
-            <p class="text-gray-800 font-semibold text-xl pb-6">
+            <p className="text-gray-800 font-semibold text-xl pb-6">
                 Order Summary
             </p>
-            <div class="flex flex-col pb-20">
-                <div class="flex space-x-8 w-full pb-8">
+            <div className="flex flex-col pb-20">
+                <div className="flex space-x-8 w-full pb-8">
                 <Image className="cursor-pointer" src="/rectangle 193.png" width={186} height={150} alt=""/>
-                    <div class="w-full">
-                        <div class="flex justify-between mx-auto">
-                            <p class="text-gray-800 font-medium text-lg pb-4">
+                    <div className="w-full">
+                        <div className="flex justify-between mx-auto">
+                            <p className="text-gray-800 font-medium text-lg pb-4">
                                 Apple Watch 1
                             </p>
-                            <p class="text-gray-800 font-semibold text-lg ml-auto">
+                            <p className="text-gray-800 font-semibold text-lg ml-auto">
                                 $20
                             </p>
                         </div>
-                        <p class="text-gray-600 pb-4">
+                        <p className="text-gray-600 pb-4">
                             White
                         </p>
-                        <p class="text-gray-600 pb-4">
+                        <p className="text-gray-600 pb-4">
                             Small
                         </p>
-                        <p class="text-gray-600 pb-4">
+                        <p className="text-gray-600 pb-4">
                             Quantity: 1
                         </p>
                     </div>
                 </div>
-                <div class="flex space-x-8 w-full pb-8">
+                <div className="flex space-x-8 w-full pb-8">
                 <Image className="cursor-pointer" src="/rectangle 194.png" width={186} height={150} alt=""/>
-                    <div class="w-full">
-                        <div class="flex justify-between mx-auto">
-                            <p class="text-gray-800 font-medium text-lg pb-4">
+                    <div className="w-full">
+                        <div className="flex justify-between mx-auto">
+                            <p className="text-gray-800 font-medium text-lg pb-4">
                                 Apple Watch 2
                             </p>
-                            <p class="text-gray-800 font-semibold text-lg ml-auto">
+                            <p className="text-gray-800 font-semibold text-lg ml-auto">
                                 $40
                             </p>
                         </div>
-                        <p class="text-gray-600 pb-4">
+                        <p className="text-gray-600 pb-4">
                             Black &amp; Orange
                         </p>
-                        <p class="text-gray-600 pb-4">
+                        <p className="text-gray-600 pb-4">
                             Size: 41
                         </p>
-                        <p class="text-gray-600 pb-4">
+                        <p className="text-gray-600 pb-4">
                             Quantity: 2
                         </p>
                     </div>
                 </div>
-                <div class="flex space-x-8 w-full pb-8">
+                <div cclassName="flex space-x-8 w-full pb-8">
                 <Image className="cursor-pointer" src="/rectangle 194.png" width={186} height={150} alt=""/>
-                    <div class="w-full">
-                        <div class="flex justify-between mx-auto">
-                            <p class="text-gray-800 font-medium text-lg pb-4">
+                    <div className="w-full">
+                        <div className="flex justify-between mx-auto">
+                            <p className="text-gray-800 font-medium text-lg pb-4">
                                 Apple Watch 3
                             </p>
-                            <p class="text-gray-800 font-semibold text-lg ml-auto">
+                            <p className="text-gray-800 font-semibold text-lg ml-auto">
                                 $70
                             </p>
                         </div>
-                        <p class="text-gray-600 pb-4">
+                        <p className="text-gray-600 pb-4">
                             Blue, Gray, Black
                         </p>
-                        <p class="text-gray-600 pb-4">
+                        <p className="text-gray-600 pb-4">
                             Quantity: 1
                         </p>
                     </div>
                 </div>
-                <div class="flex justify-between">
-                    <p class="text-lg text-gray-600">
+                <div className="flex justify-between">
+                    <p className="text-lg text-gray-600">
                         Total items
                     </p>
-                    <p class="text-gray-600 font-semibold text-lg pb-6">
+                    <p className="text-gray-600 font-semibold text-lg pb-6">
                         03
                     </p>
                 </div>
-                <div class="flex justify-between">
-                    <p class="text-lg text-gray-600">
+                <div className="flex justify-between">
+                    <p className="text-lg text-gray-600">
                         Total Charges
                     </p>
-                    <p class="text-gray-600 font-semibold text-lg pb-6">
+                    <p className="text-gray-600 font-semibold text-lg pb-6">
                         $80
                     </p>
                 </div>
-                <div class="flex justify-between pb-6">
-                    <p class="text-lg text-gray-600">
+                <div className="flex justify-between pb-6">
+                    <p className="text-lg text-gray-600">
                         Shipping charges
                     </p>
-                    <p class="text-gray-600 font-semibold text-lg pb-6">
+                    <p className="text-gray-600 font-semibold text-lg pb-6">
                         $90
                     </p>
                 </div>
-                <div class="flex justify-between py-4 border-t border-b border-gray-200 mb-12">
-                    <p class="text-lg text-gray-800 font-medium">
+                <div className="flex justify-between py-4 border-t border-b border-gray-200 mb-12">
+                    <p className="text-lg text-gray-800 font-medium">
                         Total 
                     </p>
-                    <p class="text-gray-800 font-semibold text-lg ">
+                    <p className="text-gray-800 font-semibold text-lg ">
                         $170
                     </p>
                 </div>
-                <p class="font-semibold text-gray-800 text-xl pb-6">
+                <p className="font-semibold text-gray-800 text-xl pb-6">
                     Payment Method
                 </p>
-                <div class="grid grid-cols-2 gap-x-6 gap-y-6 pb-12">
-                    <input placeholder="Name of Card" class="border-b border-gray-200 pb-4 placeholder-gray-600"/>
-                    <input placeholder="Card Number" class="border-b border-gray-200 pb-4 placeholder-gray-600"/>
+                <div className="grid grid-cols-2 gap-x-6 gap-y-6 pb-12">
+                    <input placeholder="Name of Card" className="border-b border-gray-200 pb-4 placeholder-gray-600"/>
+                    <input placeholder="Card Number" className="border-b border-gray-200 pb-4 placeholder-gray-600"/>
                     <div class="relative">
-                        <select aria-label="select a city" type="text" name="region" required="" id="region" class="bg-white appearance-none -z-10 w-full text-gray-600 border-b border-gray-200 pb-4 text-black-primary invalid:text-gray-600 rounded focus:outline-none">
+                        <select aria-label="select a city" type="text" name="region" required="" id="region" className="bg-white appearance-none -z-10 w-full text-gray-600 border-b border-gray-200 pb-4 text-black-primary invalid:text-gray-600 rounded focus:outline-none">
                             <option value="" disabled="">Expiry Date</option>
                             <option value="90321">2023</option>
                             <option value="29000">2024</option>
                             <option value="72500">2025</option>
                         </select>
-                        <div class="z-30 cursor-pointer absolute top-0 right-4 ">
+                        <div className="z-30 cursor-pointer absolute top-0 right-4 ">
                             <Image className="cursor-pointer" src="/vector (8).svg" width={14} height={14} alt=""/>
                         </div>
                     </div>
-                    <input placeholder="CVC" class="border-b border-gray-200 pb-4 placeholder-gray-600"/>
+                    <input placeholder="CVC" className="border-b border-gray-200 pb-4 placeholder-gray-600"/>
                 </div>
-                <button class="bg-gray-800 text-white font-medium py-4 hover:bg-gray-600 transition duration-700">
+                <button className="bg-gray-800 text-white font-medium py-4 hover:bg-gray-600 transition duration-700">
                     Complete Purchase
                 </button>
             </div>
@@ -379,4 +379,4 @@ import React from 'react';const Index = () => {
     );
   };
   
-  export default Index;
+  export default checkout;

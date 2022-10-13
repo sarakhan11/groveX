@@ -47,11 +47,11 @@ import React from 'react';const Index = () => {
             Have a workshop (atelier) in Paris. Deliver Friction-Free Customer Service. 
             Try Kayako free for 14 days.
           </p>
-          <link href='/discription'>
+          <Link href='/discription'>
             <button className="px-12 py-4 bg-gray-800 hover:bg-gray-700 text-white font-medium">
                 See More
             </button>
-          </link>
+          </Link>
         </div>
           <Image className="cursor-pointer" src="/photo-1.png" width={594} height={404} alt=""/>
         </div>
@@ -121,11 +121,11 @@ import React from 'react';const Index = () => {
                 <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-x-4 ">
                   <input placeholder="Full Name" className="placeholder-gray-600 border-2 border-gray-200 p-4"/>
                     <input placeholder="Email Address" className="placeholder-gray-600 border-2 border-gray-200 p-4"/>
-                      <link href="/cart">
+                      <Link href="/cart">
                         <button class="bg-gray-800 hover:bg-gray-700 font-medium text-white py-4 px-14">
-                            Join Now
+                              Join Now
                         </button>
-                      </link>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -166,9 +166,9 @@ import React from 'react';const Index = () => {
                   Bags
                 </div>
                 <div className="bg-gray-100 w-[380px] py-5 px-4">
-                  <link href='/product'>
-                    Watches
-                  </link>
+                  <Link href='/product'>
+                      Watches
+                  </Link>
                 </div>
               </div>
             </div>
