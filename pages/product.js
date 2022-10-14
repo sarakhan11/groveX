@@ -8,15 +8,15 @@ import React from 'react';const Product = () => {
       <>
         <div className=" mx-auto pt-12 container pb-14">
             <div className="flex justify-between mx-auto items-center my-auto pb-12">
-                <p className="text-4xl text-gray-800 font-semibold">
+                <p className="xl:text-4xl lg:text-4xl md:text-3xl sm:2xl text-2xl  text-gray-800 font-semibold">
                     The latest and greatest
                 </p>
                 <Link href='/filter'>
                     <Image className="cursor-pointer" src="/frame.svg" width={24} height={24} alt="" />
                 </Link>
             </div>
-            <div className="grid grid-cols-2 gap-x-8 pb-14">
-                <div className="flex flex-col">
+            <div className="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 gap-x-8 pb-14">
+                <div className="flex xl:mx-auto lg:mx-auto md:mx-4 sm:mx-4 mx-4 flex-col">
                 <Image className="cursor-pointer" src="/apple-1500849 1 (1).png" width={624} height={590} alt=""/>
                     <div className="flex justify-between pb-2 pt-4">
                         <p className="text-gray-800 font-semibold">
@@ -30,7 +30,7 @@ import React from 'react';const Product = () => {
                         Coco Nior 100ml
                     </p>
                 </div>
-                <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+                <div className="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xl:mx-auto lg:mx-auto md:mx-4 sm:mx-4 mx-4 gap-x-8 gap-y-6">
                     <div className="flex flex-col"> 
                         <Image className="cursor-pointer" src="/photo-1610113774353-3c9ad8631abd.png" width={296} height={239} alt=""/>
                     <div className="pb-2 flex justify-between pt-4">
@@ -90,8 +90,8 @@ import React from 'react';const Product = () => {
         </div>
         </div>
         <div>
-            <div className="grid grid-cols-2 gap-x-8">
-                <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+            <div className="grid grid-cols-2 grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-x-8">
+                <div className="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xl:mx-auto lg:mx-auto md:mx-4 sm:mx-4 mx-4 gap-x-8 gap-y-6">
                     <div className="flex flex-col"> 
                     <Image className="cursor-pointer" src="/photo-1592842414859-bca1263fabc2.png" width={296} height={239} alt=""/>
                     <div className="pb-2 flex justify-between pt-4">
@@ -149,7 +149,7 @@ import React from 'react';const Product = () => {
                 </p>
             </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col  xl:mx-auto lg:mx-auto md:mx-4 sm:mx-4 mx-4">
             <Image className="cursor-pointer" src="/photo-1582623082006-16d6ac6632ee.png" width={624} height={590} alt=""/>
                 <div className="flex justify-between pb-2 pt-4">
                     <p className="text-gray-800 font-semibold">

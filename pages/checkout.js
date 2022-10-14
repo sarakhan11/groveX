@@ -75,11 +75,12 @@ import React from 'react';const checkout = () => {
             <p className="text-xl font-semibold text-gray-800 pb-6">
                 Shipping Details
             </p>
-            <div className="grid grid-cols-2 gap-y-6 gap-x-8">
+            <div className="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-y-6 gap-x-8">
                 <input placeholder="First Name" className="border-b border-gray-200 pb-4 placeholder-gray-600"/>
                 <input placeholder="Last Name" className="border-b border-gray-200 pb-4 placeholder-gray-600"/>
                 <input placeholder="Address" className="border-b border-gray-200 pb-4 placeholder-gray-600 col-span-2"/>
                 <input placeholder="Address (Line 02)" className="border-b border-gray-200 pb-4 placeholder-gray-600 col-span-2"/>
+                <div className='grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1'>
                 <div className="relative">
                     <select aria-label="select a city" type="text" name="city" required="" id="City" className="bg-white appearance-none -z-10 text-gray-600 w-full border-b border-gray-200 pb-4 text-black-primary invalid:text-gray-600 rounded focus:outline-none">
                         <option value="" disabled="">Town / City</option>
@@ -127,6 +128,7 @@ import React from 'react';const checkout = () => {
                 <input placeholder="Phone Number" class="border-b border-gray-200 pb-4 placeholder-gray-600"/>
             </div>
         </div>
+    </div>
         <div className="flex pt-6 pb-12">
             <div className="bg-white dark:bg-gray-800 border rounded-sm border-gray-400 dark:border-gray-700 mr-2 w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
                 <input type="checkbox" className="checkbox opacity-0 absolute cursor-pointer w-full h-full"/>
@@ -277,7 +279,7 @@ import React from 'react';const checkout = () => {
 
 
       <div className="py-12 container w-[80%] mx-auto">
-              <div className="py-14 border-t border-b mb-12 border-gray-200 grid grid-cols-4">
+              <div className="py-14 border-t border-b mb-12 border-gray-200 grid grid  grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-y-4 sm:grid-cols-1 ">
                 <div>
                   <p className="text-xl font-semibold text-gray-600 pb-8">
                     Customer services

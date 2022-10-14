@@ -8,10 +8,10 @@ import React from 'react';const filter = () => {
       <>
         <div className=" mx-auto pt-12 ">
             <div className="container mx-auto">
-                <p className="cursor-pointer text-gray-600 text-sm pb-2">
+                <p className="cursor-pointer text-gray-600 text-sm pb-2 mx-4 xl:mx-0 lg:mx-0 md:mx-0 sm:mx-0">
                     Home - Men - Products - Filters
                 </p>
-                <div className="flex justify-between mx-auto items-center my-auto pb-12">
+                <div className="flex flex-col justify-between mx-auto items-center my-auto pb-12">
                     <div>
                         <p className="font-semibold text-gray-800 text-4xl pb-4">
                             Watches
@@ -20,7 +20,7 @@ import React from 'react';const filter = () => {
                             09 products
                         </p>
                     </div>
-                    <button className="px-6 py-4 bg-gray-800 text-white flex space-x-2 transition duration-300 hover:bg-gray-700">
+                    <button className="px-6 mt-4 py-4 bg-gray-800 text-white flex space-x-2 transition duration-300 hover:bg-gray-700">
                     <Image className="cursor-pointer" src="/frame.svg" width={24} height={24} alt=""/>
                         <p>
                             Filters
@@ -30,7 +30,7 @@ import React from 'react';const filter = () => {
             </div>
             <div className="py-12 bg-gray-50 ">
                 <div className="flex justify-between container mx-auto ">
-                    <div className="grid grid-cols-4 w-full gap-x-44">
+                    <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mx-4 xl:mx-0 lg:mx-0 md:mx-4 sm:mx-4 w-full gap-x-44">
                         <div>
                             <div className="flex space-x-2 pb-8"> 
                             <Image className="cursor-pointer" src="/frame (3).svg" width={24} height={24} alt=""/>
@@ -38,7 +38,7 @@ import React from 'react';const filter = () => {
                                 Colors
                             </p>
                         </div>
-                        <div className="flex flex-col space-y-8">
+                        <div className="flex my-4 flex-col space-y-8">
                             <div className="flex space-x-2 items-center my-auto">
                                 <div className="w-4 h-4 rounded-full bg-white">
                                 </div>
@@ -299,8 +299,8 @@ import React from 'react';const filter = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="container w-full">
-                            <button className="mt-12 justify-right flex ml-auto px-6 py-[18px] bg-gray-800 font-medium text-white hover:bg-gray-700 transition duration-300">
+                        <div className="container w-full mx-auto">
+                            <button className="mt-12 xl:justify-right lg:justify-right md:justify-center sm:justify-center justify-center flex xl:ml-auto lg:ml-auto px-6 py-[18px] bg-gray-800 font-medium text-white hover:bg-gray-700 transition duration-300">
                                 Apply Filters
                             </button>
                         </div>
