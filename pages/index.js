@@ -7,7 +7,30 @@ import React from 'react';const Index = () => {
     return (
       <>
 
-    <div className="container xl:flex hidden mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[80%] ">
+
+
+<div className='overflow-x-hidden'>
+        <div className='container'>
+      <div className=" justify-center mx-auto border-b">
+        <div className="">
+          <div className="flex flex-wrap justify-between items-center">
+            <button
+          className=" block xl:hidden text-gray pt-10 px-6"
+          onClick={() => setShowMenu(!showMenu)}
+        >
+           <svg
+                fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="30px"
+                height="30px"
+              >
+                <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z" />
+              </svg>
+        </button>
+
+       
+        <div className="container xl:flex hidden  mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[80%] container">
       <div className="flex gap-x-10 items-center my-auto">
         <Image className="cursor-pointer" src="/icons8-search.svg" width={24} height={24} alt=""/>
           <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
@@ -23,7 +46,7 @@ import React from 'react';const Index = () => {
         <div className="my-auto">
           <Image className="cursor-pointer" src="/AnitaJane.svg" width={115} height={24} alt=""/>
         </div>
-        <div className="flex items-center my-auto space-x-6">
+        <div className="flex items-center my-auto space-x-6 -mr-36">
           <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
             Join Newsletter
           </a>
@@ -35,6 +58,55 @@ import React from 'react';const Index = () => {
           </a>
         </div>
       </div>
+
+            <nav
+        className={showMenu
+            ? "absolute top-0 xl:hidden w-full h-full transform -translate-x-0 z-40 transition duration-700"
+            : "absolute top-0 xl:hidden w-full h-full transform -translate-x-full z-40 transition duration-700"} id="mobile-nav">
+               <div className=" items-right justify-center flex absolute right-8 p-4 -top-0  text-white z-40 cursor-pointer">
+              <Image
+                src="/icons8-multiply-50.png"
+                width={40}
+                height={40}
+                alt=""
+                onClick={() => setShowMenu(!showMenu)}
+                />
+            </div>
+            
+            <div className="container xl:flex xl:hidden block bg-gray-100 w-full mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[80%] ">
+              <div className="flex flex-col gap-x-10 items-center my-auto">
+                <Image className="cursor-pointer" src="/icons8-search.svg" width={24} height={24} alt=""/>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Men
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Women
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Kids
+                  </a>
+                </div>
+          
+                <div className="flex flex-col items-center my-auto space-x-6">
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Join Newsletter
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Blogs
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    About
+                  </a>
+                </div>
+              </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+    
 
     <div className='mt-20'>
       <div className="pt-2 container mx-auto flex flex-col xl:flex-row lg:flex-row md:flex-cols sm:flex-cols justify-between w-[80%] space-x-8">
@@ -145,44 +217,44 @@ import React from 'react';const Index = () => {
 
 
 
-            <div className="py-12 container mx-auto text-center">
-              <p className="text-4xl font-semibold text-gray-800 pb-12">
+            <div className="lg:py-12 md:py-6 py-4 container mx-auto items-center text-center lg:w-[70%] w-full">
+              <p className="lg:text-4xl md:text-3xl text-2xl font-semibold text-gray-800 lg:pb-12 md:pb-6 pb-4">
                 Shop By Category
               </p>
-              <div className="mx-auto justify-center items-center grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-8 gap-y-8">
-                <div className="bg-gray-100 w-[380px] py-4 px-4">
-                  Men
-                </div>
-                <div className="bg-gray-100 w-[380px] py-4 px-4">
-                  Women
-                </div>
-                <div className="bg-gray-100 w-[380px] py-4 px-4">
-                  Shoes
-                </div>
-                <div className="bg-gray-100 w-[380px] py-5 px-4">
-                  Accossries
-                </div>
-                <div className="bg-gray-100 w-[380px] py-5 px-4">
-                  Bags
-                </div>
-                <div className="bg-gray-100 w-[380px] py-5 px-4">
-                  <Link href='/product'>
-                      Watches
-                  </Link>
-                </div>
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-6 lg:mx-0 mx-4">
+              <div className="bg-gray-100 hover:bg-gray-200 transition duration-300 w-full py-4 cursor-pointer">
+                Men
+              </div>
+              <div className="bg-gray-100 hover:bg-gray-200 transition duration-300 w-full py-4 cursor-pointer">
+                Women
+              </div>
+              <div className="bg-gray-100 hover:bg-gray-200 transition duration-300 w-full py-4 cursor-pointer">
+                Shoes
+              </div>
+              <div className="bg-gray-100 hover:bg-gray-200 transition duration-300 w-full py-5 cursor-pointer">
+                Accossries
+              </div>
+              <div className="bg-gray-100 hover:bg-gray-200 transition duration-300 w-full py-5 cursor-pointer">
+                Bags
+              </div>
+              <div className="bg-gray-100 hover:bg-gray-200 transition duration-300 w-full py-5 cursor-pointer">
+                <Link href='/product'>
+                  Watches
+                </Link>
               </div>
             </div>
+          </div>
 
 
-            <div className='py-20 mx-auto container justify-center ml-10'>
-              <h1 className='text-4xl font-semibold text-gray-800 text-center'>
+            <div className='py-20 container justify-center mx-0 xl:mx-10 lg:mx-10 md:mx-10 sm:mx-4'>
+              <h1 className='text-2xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-3xl font-semibold text-gray-800 text-center'>
                 Comfiest Sofa Seats
               </h1>
-              <p className='text-base font-normal text-center lg:w-[624px] xl:w-[624px] md:w-[624px] sm:w-[424px] w-[324px] mx-auto mt-4'>
+              <p className='text-base font-normal text-center lg:w-[624px] xl:w-[624px] md:w-[624px] sm:w-[424px] w-[280px] mx-auto mt-4'>
               It is a long established fact that a reader will be distracted 
               by the readable content of a page when looking at its layout. 
               </p>
-              <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 mt-24 gap-x-8'>
+              <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 mt-24 gap-x-8 mx-4 xl:mx-10 lg:mx-10 md:mx-10 sm:mx-4'>
 
                   <div className=''>
                     <div className=''>
@@ -192,7 +264,7 @@ import React from 'react';const Index = () => {
                           Plush Cushions
                         </h1>
                       </div>
-                      <p className='mt-4 text-grau-800 text-base'>
+                      <p className='mt-4 text-grau-800 text-base '>
                         It is a long established fact that a reader will be distracted 
                         by the readable content.
                       </p>
@@ -225,7 +297,11 @@ import React from 'react';const Index = () => {
                     </div>
                   </div>
 
-                  <Image className='' src="/arno-senoner-HFE2RyC76tw-unsplash-removebg-preview 1 (1).png" width={366} height={393} alt=""/> 
+
+                  <div className='my-4'>
+                    <Image className='' src="/arno-senoner-HFE2RyC76tw-unsplash-removebg-preview 1 (1).png" width={366} height={393} alt=""/> 
+                  </div>
+                  
 
                   <div className=''>
                     <div>

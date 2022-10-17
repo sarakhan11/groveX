@@ -2,13 +2,35 @@ import { useEffect, useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import React from 'react';const cart = () => {
+  const [showMenu, setShowMenu] = useState(false);
   
   
 
     return (
       <>
 
-    <div className="container xl:flex hidden mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[80%] ">
+<div className='overflow-x-hidden'>
+        <div className='container'>
+      <div className=" justify-center mx-auto border-b">
+        <div className="">
+          <div className="flex flex-wrap justify-between items-center">
+            <button
+          className=" block xl:hidden text-gray pt-10 px-6"
+          onClick={() => setShowMenu(!showMenu)}
+        >
+           <svg
+                fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="30px"
+                height="30px"
+              >
+                <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z" />
+              </svg>
+        </button>
+
+       
+        <div className="container xl:flex hidden  mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[80%] container">
       <div className="flex gap-x-10 items-center my-auto">
         <Image className="cursor-pointer" src="/icons8-search.svg" width={24} height={24} alt=""/>
           <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
@@ -24,7 +46,7 @@ import React from 'react';const cart = () => {
         <div className="my-auto">
           <Image className="cursor-pointer" src="/AnitaJane.svg" width={115} height={24} alt=""/>
         </div>
-        <div className="flex items-center my-auto space-x-6">
+        <div className="flex items-center my-auto space-x-6 -mr-36">
           <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
             Join Newsletter
           </a>
@@ -36,6 +58,56 @@ import React from 'react';const cart = () => {
           </a>
         </div>
       </div>
+
+            <nav
+        className={showMenu
+            ? "absolute top-0 xl:hidden w-full h-full transform -translate-x-0 z-40 transition duration-700"
+            : "absolute top-0 xl:hidden w-full h-full transform -translate-x-full z-40 transition duration-700"} id="mobile-nav">
+               <div className=" items-right justify-center flex absolute right-8 p-4 -top-0  text-white z-40 cursor-pointer">
+              <Image
+                src="/icons8-multiply-50.png"
+                width={40}
+                height={40}
+                alt=""
+                onClick={() => setShowMenu(!showMenu)}
+                />
+            </div>
+            
+            <div className="container xl:flex xl:hidden block bg-gray-100 w-full mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[80%] ">
+              <div className="flex flex-col gap-x-10 items-center my-auto">
+                <Image className="cursor-pointer" src="/icons8-search.svg" width={24} height={24} alt=""/>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Men
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Women
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Kids
+                  </a>
+                </div>
+          
+                <div className="flex flex-col items-center my-auto space-x-6">
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Join Newsletter
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Blogs
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    About
+                  </a>
+                </div>
+              </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+    
+
 
 
 
@@ -53,8 +125,8 @@ import React from 'react';const cart = () => {
                     </p>
                     <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col space-x-8 mx-auto">
                       <div className="py-8 border-t border-gray-100 xl:w-[848px] sm:w-[448px] lg:w-[848px]md:w-[848px] w-[348px] border-b">
-                        <div className="flex xl:justify-between lg:justify-between md:justify-between sm:justify-center items-start mx-auto">
-                          <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-row space-x-6 pb-16">
+                        <div className="flex flex-col xl:flex-row lg:flex-row md:flex-row sm:flex-col xl:justify-between lg:justify-between md:justify-between sm:justify-center items-start mx-auto">
+                          <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-row space-x-6">
                           <Image className="cursor-pointer" src="/unsplash_ZB4eQcNqVUs.png" width={164} height={166} alt=""/>
                             <div>
                               <p className="text-xs text-gray-900">RF293</p>
@@ -86,7 +158,7 @@ import React from 'react';const cart = () => {
                             <p className="font-semibold text-gray-900 mb-auto mt-24">$9,000</p>
                           </div>
                         </div>
-                        <div className="flex  xl:justify-between lg:justify-between md:justify-between sm:justify-center items-start mx-auto py-8 border-t border-gray-100">
+                        <div className="flex mt-4 flex-col xl:flex-row lg:flex-row md:flex-row sm:flex-col xl:justify-between lg:justify-between md:justify-between sm:justify-center items-start mx-auto py-8 border-t border-gray-100">
                           <div className="flex  flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-row space-x-6 ">
                           <Image className="cursor-pointer" src="/unsplash_ZB4eQcNqVUs.png" width={164} height={166} alt=""/>
                           <div>
@@ -115,7 +187,7 @@ import React from 'react';const cart = () => {
                           <p className="font-semibold text-gray-900 mb-auto mt-24">$9,000</p>
                         </div>
                       </div>
-                      <div className="flex xl:justify-between lg:justify-between md:justify-between sm:justify-center items-start mx-auto py-8 border-gray-100 border-t">
+                      <div className="flex  flex-col xl:flex-row lg:flex-row md:flex-row sm:flex-col xl:justify-between lg:justify-between md:justify-between sm:justify-center items-start mx-auto py-8 border-gray-100 border-t">
                         <div className="flex  flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-row  space-x-6 ">
                         <Image className="cursor-pointer" src="/unsplash_ZB4eQcNqVUs.png" width={164} height={166} alt=""/>
                           <div>
@@ -147,28 +219,44 @@ import React from 'react';const cart = () => {
                   </div>
 
                   
-                  <div className="bg-gray-50 w-[300px] xl:w-[400px] lg:w-[400px] md:w-[400px] sm:w-[400px] p-8 flex flex-col justify-between">
+                  <div className="bg-gray-50 lg:w-[400px] w-full p-8 flex flex-col justify-between">
                     <div>
-                      <p className="text-gray-900 text-4xl font-semibold pb-16">Summary</p>
-                      <div className="grid grid-cols-2 gap-y-5 items-end w-[246px]">
-                        <p className="text-gray-900">Subtotal</p>
-                        <p class="text-gray-900 text-right"> $9,000</p>
-                        <p className="text-gray-900">Shipping</p>
-                        <p class="text-gray-900 text-right"> $30</p>
-                        <p className="text-gray-900">Tax</p>
-                        <p class="text-gray-900 text-right"> $39</p>
+                      <p className="text-gray-900 lg:text-4xl md:text-2xl text-lg font-semibold lg:pb-16 md:pb-8 pb-4">
+                        Summary
+                      </p>
+                      <div className="grid grid-cols-2 lg:gap-y-5 gap-y-2 items-end lg:w-[246px] w-full">
+                        <p className="text-gray-900">
+                          Subtotal
+                        </p>
+                        <p className="text-gray-900 text-right"> 
+                          $9,000
+                        </p>
+                        <p className="text-gray-900">
+                          Shipping
+                        </p>
+                        <p className="text-gray-900 text-right"> 
+                          $30
+                        </p>
+                        <p className="text-gray-900">
+                          Tax
+                        </p>
+                        <p className="text-gray-900 text-right"> 
+                          $39
+                        </p>
                       </div>
                     </div>
                     <div className="flex flex-col">
                       <div className="flex justify-between pb-6">
-                        <p className="text-gray-900 text-2xl">Total</p>
-                        <p className="font-semibold text-2xl text-gray-900">$10,240</p>
+                        <p className="text-gray-900 lg:text-2xl md:text-xl text-lg">
+                          Total
+                        </p>
+                        <p className="font-semibold lg:text-2xl md:text-xl text-lg text-gray-900">
+                          $10,240
+                        </p>
                       </div>
-                      <Link href='/checkout'>
-                        <button className="bg-gray-900 text-white py-5">
-                            Checkout
-                        </button>
-                      </Link>
+                      <button className="bg-gray-900 text-white py-5 transition duration-300 hover:bg-gray-800">
+                        Checkout
+                      </button>
                     </div>
                   </div>
                 </div>

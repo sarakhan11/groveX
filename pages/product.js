@@ -8,7 +8,7 @@ import React from 'react';const Product = () => {
       <>
         <div className=" mx-auto pt-12 container pb-14">
             <div className="flex justify-between mx-auto items-center my-auto pb-12">
-                <p className="xl:text-4xl lg:text-4xl md:text-3xl sm:2xl text-2xl  text-gray-800 font-semibold">
+                <p className="xl:text-4xl lg:text-4xl md:text-3xl sm:2xl text-2xl text-gray-800 font-semibold">
                     The latest and greatest
                 </p>
                 <Link href='/filter'>
