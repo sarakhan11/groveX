@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import React from 'react';const discription = () => {
+import React from 'react';const Discription = () => {
   const [showMenu, setShowMenu] = useState(false);
   
 
@@ -484,4 +484,4 @@ import React from 'react';const discription = () => {
     );
   };
   
-  export default discription;
+  export default Discription;

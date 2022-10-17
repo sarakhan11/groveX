@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
-import React from 'react';const cart = () => {
+import React from 'react';const Cart = () => {
   const [showMenu, setShowMenu] = useState(false);
   
   
@@ -371,4 +371,4 @@ import React from 'react';const cart = () => {
     );
   };
   
-  export default cart;
+  export default Cart;
