@@ -261,7 +261,7 @@ import React from 'react';const Index = () => {
                   <div className=''>
                     <div className=''>
                       <div className='flex'>
-                        <Image className="cursor-pointer" src="/frame 811347.png" width={22} height={22} alt=""/>
+                        <Image className="cursor-pointer" src="/Frame 811347.png" width={22} height={22} alt=""/>
                         <h1 className='ml-4'>
                           Plush Cushions
                         </h1>
@@ -274,7 +274,7 @@ import React from 'react';const Index = () => {
 
                     <div className='mt-20'>
                       <div className='flex'>
-                        <Image className="cursor-pointer" src="/frame 811347.png" width={22} height={22} alt=""/>
+                        <Image className="cursor-pointer" src="/Frame 811347.png" width={22} height={22} alt=""/>
                         <h1 className='ml-4'>
                           Plush Cushions
                         </h1>
@@ -287,7 +287,7 @@ import React from 'react';const Index = () => {
 
                     <div className='mt-20'>
                       <div className='flex'>
-                        <Image className="cursor-pointer" src="/frame 811347.png" width={22} height={22} alt=""/>
+                        <Image className="cursor-pointer" src="/Frame 811347.png" width={22} height={22} alt=""/>
                         <h1 className='ml-4'>
                           Plush Cushions
                         </h1>
@@ -308,7 +308,7 @@ import React from 'react';const Index = () => {
                   <div className=''>
                     <div>
                       <div className='flex'>
-                        <Image className="cursor-pointer" src="/frame 811347.png" width={22} height={22} alt=""/>
+                        <Image className="cursor-pointer" src="/Frame 811347.png" width={22} height={22} alt=""/>
                         <h1 className='ml-4'>
                           Plush Cushions
                         </h1>
@@ -321,7 +321,7 @@ import React from 'react';const Index = () => {
 
                     <div className='mt-20'>
                       <div className='flex'>
-                        <Image className="cursor-pointer" src="/frame 811347.png" width={22} height={22} alt=""/>
+                        <Image className="cursor-pointer" src="/Frame 811347.png" width={22} height={22} alt=""/>
                         <h1 className='ml-4'>
                           Plush Cushions
                         </h1>
@@ -334,7 +334,7 @@ import React from 'react';const Index = () => {
 
                     <div className='mt-20'>
                       <div className='flex'>
-                        <Image className="cursor-pointer" src="/frame 811347.png" width={22} height={22} alt=""/>
+                        <Image className="cursor-pointer" src="/Frame 811347.png" width={22} height={22} alt=""/>
                         <h1 className='ml-4'>
                           Plush Cushions
                         </h1>
@@ -515,19 +515,19 @@ import React from 'react';const Index = () => {
                 </p>
                 <div className="grid grid-cols-1 xl:grid-cols-3 gap-y-8 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-x-8">
                   <div className="flex space-x-6 items-start"> 
-                  <Image className="cursor-pointer" src="/frame 2089.png" width={86} height={24} alt=""/>
+                  <Image className="cursor-pointer" src="/Frame 2089.png" width={86} height={24} alt=""/>
                     <p className="text-gray-600 w-[295px]">
                       “ It was an absolute pleasure working with them. They are the best, Highly Recommended! ”
                     </p>
                   </div>
                   <div className="flex space-x-6 items-start"> 
-                  <Image className="cursor-pointer" src="/bbc logo.png" width={84} height={24} alt=""/>
+                  <Image className="cursor-pointer" src="/Bbc logo.png" width={84} height={24} alt=""/>
                     <p className="text-gray-600 w-[295px]">
                       “Love this! Does exactly what it is supposed to do and so far without any real issues.”
                     </p>
                   </div>
                   <div className="flex space-x-6 items-start"> 
-                  <Image className="cursor-pointer" src="/british GQ logo.png" width={48} height={24} alt=""/>
+                  <Image className="cursor-pointer" src="/British GQ logo.png" width={48} height={24} alt=""/>
                     <p className="text-gray-600 w-[295px]">
                       “Thanks. I am fully satisfied and would recommend buying from them as they have made my life so much easier :) ”
                     </p>
