@@ -9,11 +9,11 @@ import React from 'react';const Index = () => {
 
 
 
-<div className='overflow-x-hidden'>
-        <div className='container'>
-      <div className=" justify-center mx-auto border-b">
+<div className='overflow-x-hidden border-b border-gray-100'>
+        <div className='container '>
+      <div className=" justify-center mx-auto ">
         <div className="">
-          <div className="flex flex-wrap justify-between items-center">
+          <div className="flex items-center">
             <button
           className=" block xl:hidden text-gray pt-10 px-6"
           onClick={() => setShowMenu(!showMenu)}
@@ -30,34 +30,34 @@ import React from 'react';const Index = () => {
         </button>
 
        
-        <div className="container xl:flex hidden  mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[80%] container">
-      <div className="flex gap-x-10 items-center my-auto">
-        <Image className="cursor-pointer" src="/icons8-search.svg" width={24} height={24} alt=""/>
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            Men
-          </a>
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            Women
-          </a>
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            Kids
-          </a>
-        </div>
-        <div className="my-auto">
-          <Image className="cursor-pointer" src="/AnitaJane.svg" width={115} height={24} alt=""/>
-        </div>
-        <div className="flex items-center my-auto space-x-6 -mr-36">
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            Join Newsletter
-          </a>
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            Blogs
-          </a>
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            About
-          </a>
-        </div>
-      </div>
+        <div className="xl:flex hidden pl-20 mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[90%] container">
+          <div className="flex gap-x-10 items-center my-auto ">
+            <Image className="cursor-pointer" src="/icons8-search.svg" width={24} height={24} alt=""/>
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                Men
+              </a>
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                Women
+              </a>
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                Kids
+              </a>
+            </div>
+            <div className="my-auto">
+              <Image className="cursor-pointer" src="/AnitaJane.svg" width={115} height={24} alt=""/>
+            </div>
+            <div className="flex items-center my-auto space-x-6 -mr-36 ">
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                Join Newsletter
+              </a>
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                Blogs
+              </a>
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                About
+              </a>
+            </div>
+          </div>
 
             <nav
         className={showMenu
@@ -130,29 +130,29 @@ import React from 'react';const Index = () => {
       </div>
 
 
-      <div className="pt-12 container mx-auto grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 pb-24 xl:w-[80%] lg:w-[90%] md:w-[80%] sm:w-[80%] w-[80%]">
-        <div className="xl:mb-4 lg:mb-4 md:mb-4 sm:mb-4 mb-4 justify-center mx-auto flex flex-col border-2 border-gray-300 py-6 px-4 w-[260px] xl:w-[290px] lg:w-[300px] md:w-[280px] sm:w-[280px] text-center">
-        <Image className="cursor-pointer" src="/vector (6).svg" width={24} height={24} alt=""/>
-          <p className="font-medium text-sm pt-4">
-            Interior minimalism for your property
-          </p>
-        </div>
-        <div className="xl:mb-4 lg:mb-4 md:mb-4 sm:mb-4 mb-4 justify-center mx-auto flex flex-col border-2 border-gray-300 py-6 px-4 w-[260px] xl:w-[290px] lg:w-[300px] md:w-[280px] sm:w-[280px]  text-center">
-        <Image className="cursor-pointer" src="/Group (1).svg" width={24} height={24} alt=""/>
-          <p className="font-medium text-sm pt-4">
-            Furniture minimalism for your property
-          </p>
-        </div>
-        <div className="xl:mb-4 lg:mb-4 md:mb-4 sm:mb-4 mb-4 justify-center mx-auto flex flex-col border-2 border-gray-300 py-6 px-4 w-[260px] xl:w-[290px] lg:w-[300px] md:w-[280px] sm:w-[280px]  text-center">
-        <Image className="cursor-pointer" src="/Group (2).svg" width={24} height={24} alt=""/>
-          <p className="font-medium text-sm pt-4">
-            Durability for your property
-          </p>
-        </div>
-        <div className="xl:mb-4 lg:mb-4 md:mb-4 sm:mb-4 mb-4 justify-center mx-auto flex flex-col border-2 border-gray-300 py-6 px-4 w-[260px] xl:w-[290px] lg:w-[300px] md:w-[280px] sm:w-[280px]  text-center">
-        <Image className="cursor-pointer" src="/like-svgrepo-com 1.svg" width={24} height={24} alt=""/>
-            <p className="font-medium text-sm pt-4">
+        <div class="grid 2xl:grid-cols-4 xl:grid-cols-4 lg:gid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-y-2 gap-x-2 pt-16 lg:w-[80%] w-full container mx-auto">
+          <div class="flex-col gap-y-4 flex items-center text-center text-gray-600 border border-gray-300 py-6 w-full 2xl:px-4 px-3">
+          <Image className="cursor-pointer" src="/vector (6).svg" width={24} height={24} alt=""/>
+            <p class="font-medium text-sm text-gray-600">
+              Interior minimalism for your property
+            </p>
+          </div>
+          <div class="flex-col flex gap-y-4 items-center text-center text-gray-600 border border-gray-300 py-6 w-full 2xl:px-4 px-3">
+          <Image className="cursor-pointer" src="/Group (1).svg" width={24} height={24} alt=""/>
+            <p class="font-medium text-sm text-gray-600">
+              Furniture minimalism for your property
+            </p>
+          </div>
+          <div class="flex-col flex gap-y-4 items-center text-center text-gray-600 border border-gray-300 py-6 w-full 2xl:px-4 px-3">
+          <Image className="cursor-pointer" src="/Group (2).svg" width={24} height={24} alt=""/>
+            <p class="font-medium text-sm text-gray-600">
               Durability for your property
+            </p>
+          </div>
+          <div class="flex-col flex gap-y-4 items-center text-center text-gray-600 border border-gray-300 w-full py-6 2xl:px-4 px-3">
+          <Image className="cursor-pointer" src="/like-svgrepo-com 1.svg" width={24} height={24} alt=""/>
+            <p class="font-medium text-sm text-gray-600">
+              Design minimalism for your future
             </p>
           </div>
         </div>
@@ -184,26 +184,28 @@ import React from 'react';const Index = () => {
                       <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
                       <Image className="cursor-pointer" src="/star (5) 1.svg" width={22} height={22} alt=""/>
                     </div>
-                    <p className="text-sm text-gray-600 my-auto">
+                    <p className="text-sm text-gray-600 my-auto border-b border-gray-400 cursor-pointer" >
                       See all 18 reviews
                     </p>
                   </div>
+              </div>
 
-                </div>
-                <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-x-4 ">
-                  <input placeholder="Full Name" className="placeholder-gray-600 border-2 border-gray-200 p-4"/>
-                    <input placeholder="Email Address" className="placeholder-gray-600 border-2 border-gray-200 p-4"/>
-                      <Link href="/cart">
-                        <button class="bg-gray-800 hover:bg-gray-700 font-medium text-white py-4 px-14">
-                              Join Now
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                  <Image className="cursor-pointer" src="/image 240.png" width={296} height={529} alt=""/>
+
+                <div className="flex lg:flex-row flex-col gap-x-4 lg:Mx-0 mx-4 gap-y-4 items-center my-auto">
+                  <input placeholder="Full Name" className="placeholder-gray-600 border-2 border-gray-200 p-4 w-full lg:w-auto"/>
+                  <input placeholder="Email Address" className="placeholder-gray-600 border-2 border-gray-200 p-4 w-full lg:w-auto"/>
+                  <Link href="/cart">
+                    <button class="bg-gray-800 hover:bg-gray-700 font-medium text-white py-4 w-full lg:w-auto px-14">
+                      Join Now
+                    </button>
+                  </Link>
                 </div>
               </div>
+            </div>
+              <Image className="cursor-pointer" src="/image 240.png" width={296} height={529} alt=""/>
+            </div>
+            </div>
+
 
 
               <div className='pl-6 gap-y-8 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-x-8 mt-24 mb-24 w-[95%]'>
