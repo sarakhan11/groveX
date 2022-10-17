@@ -521,13 +521,13 @@ import React from 'react';const Index = () => {
                     </p>
                   </div>
                   <div className="flex space-x-6 items-start"> 
-                  <Image className="cursor-pointer" src="/Bbc logo.png" width={84} height={24} alt=""/>
+                  <Image className="cursor-pointer" src="/BBC Logo.png" width={84} height={24} alt=""/>
                     <p className="text-gray-600 w-[295px]">
                       “Love this! Does exactly what it is supposed to do and so far without any real issues.”
                     </p>
                   </div>
                   <div className="flex space-x-6 items-start"> 
-                  <Image className="cursor-pointer" src="/British GQ logo.png" width={48} height={24} alt=""/>
+                  <Image className="cursor-pointer" src="/British GQ Logo.png" width={48} height={24} alt=""/>
                     <p className="text-gray-600 w-[295px]">
                       “Thanks. I am fully satisfied and would recommend buying from them as they have made my life so much easier :) ”
                     </p>
