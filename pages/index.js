@@ -132,7 +132,7 @@ import React from 'react';const Index = () => {
 
         <div class="grid 2xl:grid-cols-4 xl:grid-cols-4 lg:gid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-y-2 gap-x-2 pt-16 lg:w-[80%] w-full container mx-auto">
           <div class="flex-col gap-y-4 flex items-center text-center text-gray-600 border border-gray-300 py-6 w-full 2xl:px-4 px-3">
-          <Image className="cursor-pointer" src="/vector (6).svg" width={24} height={24} alt=""/>
+          <Image className="cursor-pointer" src="/Group (2).svg" width={24} height={24} alt=""/>
             <p class="font-medium text-sm text-gray-600">
               Interior minimalism for your property
             </p>
