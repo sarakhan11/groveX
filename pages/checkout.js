@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
-import React from 'react';const checkout = () => {
+import React from 'react';const Checkout = () => {
   const [showMenu, setShowMenu] = useState(false);
   
 
@@ -451,4 +451,4 @@ import React from 'react';const checkout = () => {
     );
   };
   
-  export default checkout;
+  export default Checkout;
