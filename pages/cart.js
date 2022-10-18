@@ -9,9 +9,9 @@ import React from 'react';const Cart = () => {
     return (
       <>
 
-<div className='overflow-x-hidden'>
+<div className='overflow-x-hidden border-b border-gray-200 mb-4'>
         <div className='container'>
-      <div className=" justify-center mx-auto border-b">
+      <div className=" justify-center mx-auto">
         <div className="">
           <div className="flex flex-wrap justify-between items-center">
             <button
@@ -254,9 +254,11 @@ import React from 'react';const Cart = () => {
                           $10,240
                         </p>
                       </div>
-                      <button className="bg-gray-900 text-white py-5 transition duration-300 hover:bg-gray-800">
-                        Checkout
-                      </button>
+                      <Link href="/checkout">
+                        <button className="bg-gray-900 text-white py-5 transition duration-300 hover:bg-gray-800">
+                          Checkout
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

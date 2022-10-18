@@ -2,42 +2,110 @@ import { useEffect, useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import React from 'react';const checkout = () => {
+  const [showMenu, setShowMenu] = useState(false);
   
 
     return (
       <>
 
-    <div className="container xl:flex hidden mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[80%] ">
-      <div className="flex gap-x-10 items-center my-auto">
-        <Image className="cursor-pointer" src="/icons8-search.svg" width={24} height={24} alt=""/>
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            Men
-          </a>
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            Women
-          </a>
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            Kids
-          </a>
-        </div>
-        <div className="my-auto">
-          <Image className="cursor-pointer" src="/AnitaJane.svg" width={115} height={24} alt=""/>
-        </div>
-        <div className="flex items-center my-auto space-x-6">
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            Join Newsletter
-          </a>
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            Blogs
-          </a>
-          <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
-            About
-          </a>
+<div className='overflow-x-hidden border-b border-gray-100'>
+        <div className='container '>
+      <div className=" justify-center mx-auto ">
+        <div className="">
+          <div className="flex items-center">
+            <button
+          className=" block xl:hidden text-gray pt-10 px-6"
+          onClick={() => setShowMenu(!showMenu)}
+        >
+           <svg
+                fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="30px"
+                height="30px"
+              >
+                <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z" />
+              </svg>
+        </button>
+
+       
+        <div className="xl:flex hidden pl-20 mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[90%] container">
+          <div className="flex gap-x-10 items-center my-auto ">
+            <Image className="cursor-pointer" src="/icons8-search.svg" width={24} height={24} alt=""/>
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                Men
+              </a>
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                Women
+              </a>
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                Kids
+              </a>
+            </div>
+            <div className="my-auto">
+              <Image className="cursor-pointer" src="/AnitaJane.svg" width={115} height={24} alt=""/>
+            </div>
+            <div className="flex items-center my-auto space-x-6 -mr-36 ">
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                Join Newsletter
+              </a>
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                Blogs
+              </a>
+              <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                About
+              </a>
+            </div>
+          </div>
+
+            <nav
+        className={showMenu
+            ? "absolute top-0 xl:hidden w-full h-full transform -translate-x-0 z-40 transition duration-700"
+            : "absolute top-0 xl:hidden w-full h-full transform -translate-x-full z-40 transition duration-700"} id="mobile-nav">
+               <div className=" items-right justify-center flex absolute right-8 p-4 -top-0  text-white z-40 cursor-pointer">
+              <Image
+                src="/icons8-multiply-50.png"
+                width={40}
+                height={40}
+                alt=""
+                onClick={() => setShowMenu(!showMenu)}
+                />
+            </div>
+            
+            <div className="container xl:flex xl:hidden block bg-gray-100 w-full mx-auto justify-between items-center my-auto z-30 pt-9 pb-16 w-[80%] ">
+              <div className="flex flex-col gap-x-10 items-center my-auto">
+                <Image className="cursor-pointer" src="/icons8-search.svg" width={24} height={24} alt=""/>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Men
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Women
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Kids
+                  </a>
+                </div>
+          
+                <div className="flex flex-col items-center my-auto space-x-6">
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Join Newsletter
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    Blogs
+                  </a>
+                  <a className=" font-normal cursor-pointer z-30 text-gray-800 font-[Work+Sans]">
+                    About
+                  </a>
+                </div>
+              </div>
+          </nav>
         </div>
       </div>
+    </div>
+</div>
+</div>
 
-
-
+    
         <div className="container w-[842px] mx-auto justify-center">
             <p className="text-4xl font-semibold text-gray-800 pb-12">
                 Check out
@@ -198,8 +266,8 @@ import React from 'react';const checkout = () => {
                         </p>
                     </div>
                 </div>
-                <div cclassName="flex space-x-8 w-full pb-8">
-                <Image className="cursor-pointer" src="/rectangle 194.png" width={186} height={150} alt=""/>
+                <div className="flex space-x-8 w-full pb-8">
+                <Image className="cursor-pointer" src="/rectangle 193.png" width={186} height={150} alt=""/>
                     <div className="w-full">
                         <div className="flex justify-between mx-auto">
                             <p className="text-gray-800 font-medium text-lg pb-4">
@@ -210,13 +278,17 @@ import React from 'react';const checkout = () => {
                             </p>
                         </div>
                         <p className="text-gray-600 pb-4">
-                            Blue, Gray, Black
+                        Blue, Gray, Black
+                        </p>
+                        <p className="text-gray-600 pb-4">
+                            Size: 41
                         </p>
                         <p className="text-gray-600 pb-4">
                             Quantity: 1
                         </p>
                     </div>
                 </div>
+                
                 <div className="flex justify-between">
                     <p className="text-lg text-gray-600">
                         Total items

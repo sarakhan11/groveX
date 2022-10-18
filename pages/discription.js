@@ -10,9 +10,9 @@ import React from 'react';const Discription = () => {
     return (
       <>
 
-<div className='overflow-x-hidden'>
+<div className='overflow-x-hidden border-b border-gray-200 mb-8'>
         <div className='container'>
-      <div className=" justify-center mx-auto border-b">
+      <div className=" justify-center mx-auto">
         <div className="">
           <div className="flex flex-wrap justify-between items-center">
             <button
@@ -117,7 +117,7 @@ import React from 'react';const Discription = () => {
             <main>
                 <div className="container mx-auto justify-center ">
                     <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col justify-center space-x-8">
-                    <div className="container mx-auto pt-32 pb-32" id='contact-section'>
+                    <div className="container mx-auto " id='contact-section'>
                 <div className=" mt-12">
                     <CarouselProvider
                     naturalSlideWidth={100}
@@ -131,10 +131,14 @@ import React from 'react';const Discription = () => {
                     {" "}
                     <div className="">
                       <div className="flex justify-between items-center " >
-                        <ButtonNext>
+                        <ButtonNext className=''>
                           {" "}
-                          <Image className="cursor-pointer absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 left-7" src="/chevron-back (1).png" width={22} height={22} alt=""/>
+                          <div>
+                          <Image className=" cursor-pointer absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 left-7" src="/chevron-back (1).png" width={22} height={22} alt=""/>
+                          </div>
+                          <div className=''>
                           <Image className="absolute top-[36%] px-[11px] py-[7.5px] bg-gray-200 z-30 right-7 cursor-pointer" src="/chevron-back.png" width={22} height={22} alt=""/>
+                          </div>
                         </ButtonNext>
                       </div>
                       <Slider>

@@ -6,12 +6,12 @@ import React from 'react';const filter = () => {
 
     return (
       <>
-        <div className=" mx-auto pt-12 ">
+        <div className=" mx-auto pt-12">
             <div className="container mx-auto">
                 <p className="cursor-pointer text-gray-600 text-sm pb-2 mx-4 xl:mx-0 lg:mx-0 md:mx-0 sm:mx-0">
                     Home - Men - Products - Filters
                 </p>
-                <div className="flex flex-col justify-between mx-auto items-center my-auto pb-12">
+                <div className="flex flex-col xl:flex-row lg:flex-row md:flex-row sm:flex-col  justify-between mx-auto items-center my-auto pb-12">
                     <div>
                         <p className="font-semibold text-gray-800 text-4xl pb-4">
                             Watches
@@ -28,9 +28,9 @@ import React from 'react';const filter = () => {
                     </button>
                 </div>
             </div>
-            <div className="py-12 bg-gray-50 ">
+            <div className="py-12 bg-gray-50">
                 <div className="flex justify-between container mx-auto ">
-                    <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mx-4 xl:mx-0 lg:mx-0 md:mx-4 sm:mx-4 w-full gap-x-44">
+                    <div className="gap-y-8 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mx-4 xl:mx-0 lg:mx-0 md:mx-4 sm:mx-4 w-full gap-x-44">
                         <div>
                             <div className="flex space-x-2 pb-8"> 
                             <Image className="cursor-pointer" src="/frame (3).svg" width={24} height={24} alt=""/>
